@@ -6,8 +6,19 @@
   <link href = "../css/main.css" type="text/css">
 </head>
 <body>
-  <area shape = "rect" coords = "25,25,125,125">
-  <area shape = "circle" coords = "200,75,50">
-  <area shape = "poly" coords = "450,25,435,60,400,75,435,90,450,125,465,90,500,75,465,60, 70">
+<p>Выбери фигуру:</p>
+<img src = "../img/map.png" usemap="#map" alt = "Доступны 4 фигуры для выбора">
+<map id="map">
+  <area shape="rect" coords="25,25,125,125" href=" https://ru.wikipedia.org/wiki/Квадрат" alt="Красный_квадрат" target="_blank">
+  <area shape="circle" coords="200,75,50"
+        href="https://ru.wikipedia.org/wiki/%D0%97%D0%B5%D0%BB%D1%91%D0%BD%D1%8B%D0%B9_%D1%86%D0%B2%D0%B5%D1%82"
+        alt="Зелёный круг." target="_blank"/>
+  <area shape = "poly" coords = "325,25,262,125,388,125"
+        href = "https://ru.wikipedia.org/wiki/%D0%A1%D0%B8%D0%BD%D0%B8%D0%B9_%D1%86%D0%B2%D0%B5%D1%82"
+        alt = "Голубой треугольник" >
+  <area shape = "poly" coords = "450,25,435,60,400,75,435,90,450,125,465,90,500,75,465,60"
+        href = "https://ru.wikipedia.org/wiki/%D0%96%D1%91%D0%BB%D1%82%D1%8B%D0%B9_%D1%86%D0%B2%D0%B5%D1%82"
+        alt = "Желтая звезда">
+</map>
 </body>
 </html>
