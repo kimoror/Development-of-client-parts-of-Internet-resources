@@ -1,0 +1,24 @@
+.title{
+  font-family: -apple-system;
+  color: #555555;
+}
+.menu{
+  background-color: cornsilk;
+}
+
+.menu ul{
+  list-style: none; /*убираем маркеры списка*/
+  margin: 0; /*убираем отступы*/
+  padding-left: 0; /*убираем отступы*/
+  background-color: bisque;
+}
+
+.menu li{
+  float:left; /*Размещаем список горизонтально для реализации меню*/
+  margin-right:10px; /*Добавляем отступ у пунктов меню*/
+}
+
+.menu a{
+  text-decoration: none; /*убираем подчеркивание текста ссылок*/
+  color: black;
+}
