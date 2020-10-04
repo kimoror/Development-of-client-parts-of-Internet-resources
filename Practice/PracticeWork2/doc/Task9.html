@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task9</title>
+  <script>
+    window.onload = function() {
+      var drawingCanvas = document.getElementById('smile');
+      if(drawingCanvas && drawingCanvas.getContext) {
+        var context = drawingCanvas.getContext('2d');
+        // Рисуем окружность
+        context.strokeStyle = "#000";
+        context.fillStyle = "#fc0";
+        context.beginPath();
+        context.arc(100,100,50,0,Math.PI*2,true);
+        context.closePath();
+        context.stroke();
+        context.fill();
+        //Рисуем вложенную окружность
+        context.fillStyle = "#fc0";
+        context.beginPath();
+        context.arc(100,100,20,0,Math.PI*2,true);
+        context.closePath();
+        context.stroke();
+        context.fill();
+        //Рисуем вложенн
+      }
+    }
+  </script>
+</head>
+<p>Желудков Данила Михайлович</p>
+<body>
+  <canvas id="smile" height="1280" width="920">
+    <p>Желудков Данила Михайлович</p>
+  </canvas>
+</body>
+</html>
