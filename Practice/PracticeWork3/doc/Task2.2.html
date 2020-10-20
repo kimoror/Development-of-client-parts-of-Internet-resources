@@ -3,8 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        .shadow1{
+            box-shadow: 5px 5px 10px 3px red;
+            transition-duration: 1s;
+            transition-timing-function: ease-in;
+        }
+        .shadow2{
+            box-shadow: 0.4em 0.4em 5px rgba(122,122,122,0.5);
+        }
+        .shadow1:hover{
+            box-shadow: 5px 5px 10px 3px green;
+        }
+        .shadow3{
+            box-shadow: -5px -5px 10px 3px greenyellow;
+            transition-duration: .5s;
+            transition-timing-function: ease-out;
+        }
+        .shadow3:hover{
+            box-shadow: 5px 5px 10px 3px skyblue;
+        }
+        .shadow4{
+            box-shadow: -5px 5px 10px 3px greenyellow;
+            transition-duration: 2s;
+            transition-timing-function: linear;
+        }
+        .shadow4:hover{
+            box-shadow: 5px 5px 10px 3px rebeccapurple;
+        }
+    </style>
 </head>
 <body>
-
+    <img class = "shadow1" src="../img/Task3v2.jpg" height="400" width="400" alt="shadow">
+    <img class = "shadow2" src="../img/Task3v2.jpg" height="400" width="400" alt="shadow">
+    <img class = "shadow3" src="../img/Task3v2.jpg" height="400" width="400" alt="shadow">
+    <img class = "shadow4" src="../img/Task3v2.jpg" height="400" width="400" alt="shadow">
 </body>
 </html>
