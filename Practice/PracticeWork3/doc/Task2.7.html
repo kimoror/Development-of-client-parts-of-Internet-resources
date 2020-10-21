@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!-- http://htmlbook.ru/practical/obyazatelnye-polya-formy-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task2.7</title>
+    <style>
+    input:valid + span:after {
+    content: "\2714";
+        color:green;
+    padding-left: 5px;
+    }
+    input:invalid + span:after {
+    content: "\2718";
+        color:red;
+    padding-left: 5px;
+    }
+    input[type="number"] {
+    margin-right: -3px;
+    }
+    </style>
+</head>
+<body>
+<form>
+    <p>Пожалуйста, заполните обязательные поля.</p>
+    <p>Имя: <input type="text" required><span></span></p>
+    <p>Возраст: <input type="number" size="3"><span></span></p>
+    <p>E-mail: <input type="email" required><span></span></p>
+    <p>Сайт: <input type="url"><span></span></p>
+    <p><input type="submit" value="Отправить"></p>
+</form>
+</body>
+</html>
