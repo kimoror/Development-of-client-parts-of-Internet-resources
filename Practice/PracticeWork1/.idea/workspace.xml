@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb92825c-1fe2-4880-a335-b55614aaa8a4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/doc/Task1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/Task12.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/Task12.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PracticeWork2/doc/Task1Home.html" beforeDir="false" afterPath="$PROJECT_DIR$/../PracticeWork2/doc/Task1Home.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,6 +14,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="CSS File" />
         <option value="HTML File" />
       </list>
     </option>
@@ -36,16 +39,27 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JavaScript Debug.Task8.html">
     <configuration name="Task1.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/PracticeWork1/doc/Task1.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="Task8.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/PracticeWork1/doc/Task8.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.Task8.html" />
         <item itemvalue="JavaScript Debug.Task1.html" />
       </list>
     </recent_temporary>
@@ -58,7 +72,21 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1601374213621</updated>
-      <workItem from="1601374217583" duration="858000" />
+      <workItem from="1601374217583" duration="11392000" />
+      <workItem from="1601395382548" duration="6601000" />
+      <workItem from="1601405417537" duration="2586000" />
+      <workItem from="1601411090823" duration="595000" />
+      <workItem from="1601415724833" duration="83000" />
+      <workItem from="1601554139228" duration="58000" />
+      <workItem from="1601557416673" duration="10000" />
+      <workItem from="1601710711703" duration="4002000" />
+      <workItem from="1601844735723" duration="134000" />
+      <workItem from="1601846278293" duration="26000" />
+      <workItem from="1602104247240" duration="5273000" />
+      <workItem from="1602144181305" duration="7178000" />
+      <workItem from="1602324381033" duration="110000" />
+      <workItem from="1602885168471" duration="50000" />
+      <workItem from="1603308995258" duration="760000" />
     </task>
     <servers />
   </component>
@@ -66,6 +94,14 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="680" y="278" key="#Web_Browsers" timestamp="1601395923099">
+      <screen x="0" y="24" width="1920" height="1056" />
+    </state>
+    <state x="680" y="278" key="#Web_Browsers/0.24.1920.1056@0.24.1920.1056" timestamp="1601395923099" />
+    <state x="695" y="231" key="FileChooserDialogImpl" timestamp="1601409103665">
+      <screen x="0" y="24" width="1920" height="1056" />
+    </state>
+    <state x="695" y="231" key="FileChooserDialogImpl/0.24.1920.1056@0.24.1920.1056" timestamp="1601409103665" />
     <state x="329" y="96" key="SettingsEditor" timestamp="1601374400242">
       <screen x="0" y="24" width="1920" height="1056" />
     </state>
