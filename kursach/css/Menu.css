@@ -1,29 +1,3 @@
-body{
-  margin: 0;
-  padding: 0;
-}
-
-header{
-  position: absolute;
-  width: 100%;
-  background: black;
-  /*font-family: ‘Helvetica Neue’, sans-serif;*/
-}
-
-.title{
-  font-family: 'Titillium Web', sans-serif;
-  font-size: 400%;
-  font-stretch: extra-expanded;
-  color: white;
-  text-align: center;
-  padding-top: 1%;
-}
-.underTitle{
-  font-family: 'Titillium Web', sans-serif;
-  color: white;
-  text-align: center;
-  justify-self: center;
-}
 
 @import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
 .menu-main {
@@ -72,17 +46,17 @@ header{
 }
 .menu-main a:hover:before, .menu-main .current:before {left: 0;}
 .menu-main a:hover:after, .menu-main .current:after {right: 0;}
-  @media screen and (max-width: 550px){/*550px*/
+  @media (max-width: 580px) {/*550px*/
   .menu-main {padding-top: 0;}
   .menu-main li {display: inline-block;}
-  .menu-main li:after {content: none;}
+  /* .menu-main li:after {content: none;} */
   .menu-main a {
     padding: 12px 0 20px;
     padding-bottom: 15px;
     margin: 0 13px;/*0 30*/
   }
   .title{
-    font-size:300%;
+    font-size:350%;
 
   }
 }
