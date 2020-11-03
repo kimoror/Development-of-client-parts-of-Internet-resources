@@ -1,0 +1,26 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  position: absolute;
+  width: 100%;
+  background: black;
+  /*font-family: ‘Helvetica Neue’, sans-serif;*/
+}
+
+.title{
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 400%;
+  font-stretch: extra-expanded;
+  color: white;
+  text-align: center;
+  padding-top: 1%;
+}
+.underTitle{
+  font-family: 'Titillium Web', sans-serif;
+  color: white;
+  text-align: center;
+  justify-self: center;
+}
