@@ -1,2 +1,4 @@
 Меню:
 https://html5book.ru/gorizontalnoe-menu/#part2
+Список товаров:
+https://m.habr.com/ru/post/319280/
