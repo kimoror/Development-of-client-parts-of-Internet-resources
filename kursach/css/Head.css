@@ -4,23 +4,31 @@ body{
 }
 
 header{
-  position: absolute;
   width: 100%;
   background: black;
   /*font-family: ‘Helvetica Neue’, sans-serif;*/
 }
 
 .title{
-  font-family: 'Titillium Web', sans-serif;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
   font-size: 400%;
+  letter-spacing: 2px;
   font-stretch: extra-expanded;
   color: white;
   text-align: center;
   padding-top: 1%;
 }
 .underTitle{
-  font-family: 'Titillium Web', sans-serif;
+  font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+  letter-spacing: 5px;
   color: white;
   text-align: center;
-  justify-self: center;
+}
+@media screen and (max-width: 550px) {
+  .title{
+    font-size:300%;
+  }
+  .underTitle{
+    letter-spacing: 2px;
+  }
 }

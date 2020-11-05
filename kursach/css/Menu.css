@@ -15,15 +15,15 @@
 .menu-main li:last-child:after {content: none;}
 .menu-main a {
   text-decoration: none; /*Подчёркивание выключено*/
-  font-family: 'Ubuntu Condensed', sans-serif;
-  letter-spacing: 2px;
+  font-family: Impact, Charcoal, sans-serif;
+  letter-spacing: 1px;
   position: relative;
   padding-bottom: 20px;
   margin: 0 34px 0 30px;
   font-size: 17px;
   text-transform: uppercase;
   display: inline-block;
-  transition: color .6s;/*Устанавливает эффект перехода между двумя состояниями элемента,
+  transition: color .5s;/*Устанавливает эффект перехода между двумя состояниями элемента,
    *они могут быть определены с помощью псевдоэлемента. КОнкретно здесь для букв*/
 }
 .menu-main a, .menu-main a:visited {color: #9d999d;}/*:visited ссылок уже посещённых пользователем*/
@@ -41,11 +41,11 @@
   bottom: 5px;/*расстояние от надписи меню*/
   left: 50%;
   background: #feb386;
-  transition: .7s;
+  transition: .6s;
 }
 .menu-main a:hover:before, .menu-main .current:before {left: 0;}
 .menu-main a:hover:after, .menu-main .current:after {right: 0;}
-@media screen and (max-width: 550px){/*550px*/
+@media only screen and (max-width: 550px){/*550px*/
   .menu-main {padding-top: 0;}
   .menu-main li {display: inline-block;}
   .menu-main li:after {content: none;}
@@ -54,8 +54,5 @@
     padding-bottom: 15px;
     margin: 0 13px;/*0 30*/
   }
-  .title{
-    font-size:300%;
 
-  }
 }

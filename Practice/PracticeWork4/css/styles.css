@@ -1,0 +1,58 @@
+.t1::before{
+}
+content: "\2018";/*Левая и правая двойные угловые кавычки*/
+.t1::after{
+  content: "\2019";/*Левая и правая двойные угловые кавычки*/
+}
+
+.t2::before{
+  content: "\201A"/*Нижняя двойная кавычка*/
+}
+.t2::after{
+  content: "\201A"/*Нижняя двойная кавычка*/
+}
+
+.t3::before{
+  content: "\201c"/*Левая и правая двойные кавычки*/
+}
+.t3::after{
+  content: "\201d"/*Левая и правая двойные кавычки*/
+}
+
+.t4::before{
+  content: "\201e"/*Нижняя двойная кавычка*/
+}
+.t4::after{
+  content: "\201e"/*Нижняя двойная кавычка*/
+}
+
+.t5::before{
+  content: "\00ab"/*Левая и правая двойные угловые кавычки*/
+}
+.t5::after{
+  content: "\00bb"/*Левая и правая двойные угловые кавычки*/
+}
+
+.T2One{
+  text-decoration: overline;
+  text-decoration-style: solid;
+  text-decoration-color: green;
+}
+.T2Two{
+  text-decoration: line-through;
+  text-decoration-color: red;
+  text-decoration-style:dotted;
+  color: blue;
+}
+.T2Three{
+  text-decoration:underline ;
+  text-decoration-color: yellow;
+  text-decoration-style: double;
+  color: brown;
+}
+.T2Four{
+  text-decoration: overline ;
+  text-decoration-color: green;
+  text-decoration-style: wavy;
+  color: purple;
+}
