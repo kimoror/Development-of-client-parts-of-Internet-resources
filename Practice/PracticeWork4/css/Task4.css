@@ -1,0 +1,37 @@
+.main-div{
+    height: 200px;
+    width: 600px;
+    border: 4px solid black;
+    position: relative; /* Относительное позиционирование */
+    margin-bottom: 20px;
+}
+.main-div::before, .main-div::after{
+    content: '';
+    position: absolute;
+}
+.main-div::after{
+    width: 20px;
+    height: 40px;
+    background: black;
+    /*width: 10px;*/
+    /*height: 20px;*/
+    /*background: #000;*/
+    right: -20px; top: 80px;
+}
+
+.main-div::before{
+   height: 100%;
+}
+
+.low::before{
+    width: 33%;
+    background: #ED1C24;
+}
+.medium::before{
+    width: 66%;
+    background: #ff9100;
+}
+.full::before{
+    width: 100%;
+    background: green;
+}

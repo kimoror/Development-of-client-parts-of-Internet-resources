@@ -1,0 +1,34 @@
+.table-one{
+    border: 3px solid skyblue;
+    border-collapse: collapse;
+    width: 50%;
+}
+.main-tr1{
+    background: #ff9100;
+    padding-right: 10px;
+}
+.tr1-dop{
+    background: rebeccapurple;
+}
+.tr1-dop:hover{
+    background: blueviolet;
+}
+.th-1{
+    padding-right: 15px;
+}
+.td-1{
+    padding-right: 15px;
+}
+
+.td-2{
+    color: cornflowerblue;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.main-th2{
+    border-bottom: 3px solid cornflowerblue;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
