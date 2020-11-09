@@ -7,11 +7,11 @@
     <link href="../css/Head.css" rel="stylesheet" type="text/css">
     <link href="../css/Menu.css" rel="stylesheet"  type="text/css">
     <link href = "../css/MainPage/NewBooks.css" rel="stylesheet" type="text/css">
-    <style>
-    </style>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" >
+<!--    <link href="../css/popup.style.css" rel="stylesheet">-->
 </head>
 <body>
-    <header>
+<header>
         <div class = "title">Bookshelf</div>
         <div class="underTitle">Интернет-магазин</div>
         <div>
@@ -28,32 +28,80 @@
     <div class="novelties">
       <h2 class="newsTitle">Новинки</h2>
       <div class = "delimetr"></div>
-        <div class = "test1">
-      <ul class="products clearfix">
-      	<li class="product-wrapper">
-      		<a href="" class="product">
-            <div class="product-photo">
-  	            <img src="../img/Books/ObshenieVsegoZhivogo.png" alt="">
+        <div class="container" style="padding-top: 40px;">
+
+            <div class="row">
+                <div class="col-md-6 col-xl-3">
+                    <div class="card mx-auto mb-4 cardTransform" style="max-width: 300px; border: none">
+                        <!-- Изображение -->
+                        <img class="card-img-top imgSize" src="../img/Books/Anti-ti.jpg" alt="...">
+                        <!-- Текстовый контент -->
+                        <div class="card-body">
+                            <h4 class="card-title">Заголовок</h4>
+                            <p class="card-text hiddenText">Каждый веб-разработчик знает, что такое текст-«рыба». Текст этот, несмотря на
+                                название, не имеет никакого отношения к обитателям водоемов.</p>
+                            <a href="#" class="btn btn-dark" style="color: #feb386">Подробнее</a>
+                            <a href="#" class="btn btn-dark" style="color: #feb386">Купить</a>
+                        </div>
+                    </div><!-- Конец карточки -->
+                </div>
+                <div class="col-md-6 col-xl-3">
+                    <div class="card mx-auto mb-4 cardTransform" style="max-width: 300px; border: none">
+                        <!-- Изображение -->
+                        <img class="card-img-top imgSize " src="../img/Books/EraMedvedey.jpg" alt="...">
+                        <!-- Текстовый контент -->
+                        <div class="card-body">
+                            <h4 class="card-title">Заголовок</h4>
+                            <p class="card-text hiddenText">Каждый веб-разработчик знает, что такое текст-«рыба». Текст этот, несмотря на
+                                название, не имеет никакого отношения к обитателям водоемов.</p>
+                            <a href="#" class="btn btn-dark" style="color: #feb386">Подробнее</a>
+                            <a href="#" class="btn btn-dark" style="color: #feb386">Купить</a>
+                        </div>
+                    </div><!-- Конец карточки -->
+                </div>
+                <div class="col-md-6 col-xl-3">
+                    <div class="card mx-auto mb-4 cardTransform" style="max-width: 300px;border: none">
+                        <!-- Изображение -->
+                        <img class="card-img-top imgSize" src="../img/Books/ObshenieVsegoZhivogo.png" alt="...">
+                        <!-- Текстовый контент -->
+                        <div class="card-body">
+                            <h4 class="card-title">Заголовок</h4>
+                            <p class="card-text hiddenText">Каждый веб-разработчик знает, что такое текст-«рыба». Текст этот, несмотря на
+                                название, не имеет никакого отношения к обитателям водоемов.</p>
+                            <a href="#" class="btn btn-dark" style="color: #feb386">Подробнее</a>
+                            <a href="#" class="btn btn-dark" style="color: #feb386">Купить</a>
+                        </div>
+                    </div><!-- Конец карточки -->
+                </div>
+                <div class="col-md-6 col-xl-3">
+                    <div class="card mx-auto mb-4 cardTransform" style="max-width: 300px; border: none">
+                        <!-- Изображение -->
+                        <img class="card-img-top imgSize" src="../img/Books/MilashkaNaVirazhe.jpg" alt="...">
+                        <!-- Текстовый контент -->
+                        <div class="card-body">
+                            <h4 class="card-title">Заголовок</h4>
+                            <p class="card-text hiddenText">Каждый веб-разработчик знает, что такое текст-«рыба». Текст этот, несмотря на
+                                название, не имеет никакого отношения к обитателям водоемов.</p>
+                            <a href="#" class="btn btn-dark" style="color: #feb386">Подробнее</a>
+<!--                            <a href="#" class="btn btn-dark" style="color: #feb386">Купить</a>-->
+                        </div>
+                    </div><!-- Конец карточки -->
+                </div>
             </div>
-          </a>
-      	</li>
-      	<li class="product-wrapper">
-      		<a href="" class="product"><div class="product-photo">
-              <img src="../img/Books/MilashkaNaVirazhe.jpg" alt="">
-          </div></a>
-      	</li>
-      	<li class="product-wrapper">
-      		<a href="" class="product"><div class="product-photo">
-              <img src="../img/Books/Anti-ti.jpg" alt="">
-          </div></a>
-      	</li>
-      	<li class="product-wrapper">
-      		<a href="" class="product"><div class="product-photo">
-              <img src="../img/Books/EraMedvedey.jpg" alt="">
-          </div></a>
-      	</li>
-      </ul>
+
+                <button type="button" class="btn btn-default" data-modal="modal_1">Показать popup 1</button>
+
+            <div class="overlay" data-close=""></div>
+
+            <div id="modal_1" class="dlg-modal">
+<!--                <span class="closer" data-close=""></span>-->
+                <h3>Всплывающее окно 1</h3>
+                asdfql;lnfansdfoi
+            </div>
+
         </div>
     </div>
+<!--<script>var typeAnimate = 'fade';</script>-->
+<!--<script src="../js/popup-css3.function.js"></script>-->
 </body>
 </html>
