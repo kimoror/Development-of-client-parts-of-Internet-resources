@@ -2,3 +2,5 @@
 https://html5book.ru/gorizontalnoe-menu/#part2
 Список товаров:
 https://m.habr.com/ru/post/319280/
+Всплывающее окно:
+http://cleanjs.ru/articles/krasivye-vsplyvayushhie-dialogovye-okna.html

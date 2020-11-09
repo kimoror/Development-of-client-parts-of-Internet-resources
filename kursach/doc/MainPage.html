@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--https://habr.com/ru/company/edison/blog/343796/-->
+
 <html lang="en ru" >
 <head>
     <meta charset="UTF-8">
@@ -8,7 +8,7 @@
     <link href="../css/Menu.css" rel="stylesheet"  type="text/css">
     <link href = "../css/MainPage/NewBooks.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="../css/bootstrap.min.css" >
-<!--    <link href="../css/popup.style.css" rel="stylesheet">-->
+    <link href="../css/popup-window.css" rel="stylesheet">
 </head>
 <body>
 <header>
@@ -37,7 +37,8 @@
                         <img class="card-img-top imgSize" src="../img/Books/Anti-ti.jpg" alt="...">
                         <!-- Текстовый контент -->
                         <div class="card-body">
-                            <h4 class="card-title">Заголовок</h4>
+                            <h4 class="card-title">Анти-ты</h4>
+                            <h5>Сончи Рейв</h5>
                             <p class="card-text hiddenText">Каждый веб-разработчик знает, что такое текст-«рыба». Текст этот, несмотря на
                                 название, не имеет никакого отношения к обитателям водоемов.</p>
                             <a href="#" class="btn btn-dark" style="color: #feb386">Подробнее</a>
@@ -79,29 +80,31 @@
                         <img class="card-img-top imgSize" src="../img/Books/MilashkaNaVirazhe.jpg" alt="...">
                         <!-- Текстовый контент -->
                         <div class="card-body">
-                            <h4 class="card-title">Заголовок</h4>
-                            <p class="card-text hiddenText">Каждый веб-разработчик знает, что такое текст-«рыба». Текст этот, несмотря на
-                                название, не имеет никакого отношения к обитателям водоемов.</p>
-                            <a href="#" class="btn btn-dark" style="color: #feb386">Подробнее</a>
+                            <h4 class="card-title">Милашка на вираже</h4>
+                            <h5>Дарья Донцова</h5>
+                            <p class="card-text hiddenText">Семья становится счастливой, когда тараканы в головах мужа и жены начинают дружить семьями..</p>
 <!--                            <a href="#" class="btn btn-dark" style="color: #feb386">Купить</a>-->
+                            <button type="button" class="btn btn-dark" style="color: #feb386"
+                                    data-modal="modal_1">Подробнее</button>
+                            <a href="#" class="btn btn-dark" style="color: #feb386">Купить</a>
                         </div>
                     </div><!-- Конец карточки -->
                 </div>
             </div>
 
-                <button type="button" class="btn btn-default" data-modal="modal_1">Показать popup 1</button>
+
 
             <div class="overlay" data-close=""></div>
 
             <div id="modal_1" class="dlg-modal">
-<!--                <span class="closer" data-close=""></span>-->
-                <h3>Всплывающее окно 1</h3>
-                asdfql;lnfansdfoi
+                <span class="closer" data-close=""></span>
+                <h3>Описание</h3>
+                Семья становится счастливой, когда тараканы в головах мужа и жены начинают дружить семьями. Так заявила Виоле Таракановой её бывшая одноклассница Ирина. Они не виделись много лет, но сейчас Ире нужна помощь. Вилка не может ей отказать и узнает странную историю: еще одна их одноклассница Настя Тихонова в свое время удачно вышла замуж за богатого бизнесмена, жила счастливо, но трагически погибла в автомобильной катастрофе. А совсем недавно Ира встретилась с одной женщиной и узнала в ней … Настю, поэтому уверена, что Тихонова жива! Виоле надо непременно доказать, что смерть на шоссе - спектакль. Таракановой совсем не хочется помогать Ирине, но они с Дмитриевым вынуждены разбираться в этом запутанном деле. Степан и Виола проделали колоссальную работу, и вывели на чистую воду того, кого меньше всего ожидали…
             </div>
 
         </div>
     </div>
-<!--<script>var typeAnimate = 'fade';</script>-->
-<!--<script src="../js/popup-css3.function.js"></script>-->
+<script>var typeAnimate = 'fade';</script>
+<script src="../js/popup-window-css3.function.js"></script>
 </body>
 </html>
