@@ -1,0 +1,55 @@
+body{
+    display: flex;
+    flex-direction: row;
+}
+
+.block1{
+    margin: 20px ;
+    width: 60px;
+    height: 60px;
+    background: cornflowerblue;
+
+}
+.block1:hover{
+    transform: translate(20px);
+}
+
+.block2{
+    margin: 20px ;
+    width: 60px;
+    height: 60px;
+    background: cornflowerblue;
+}
+.block2:hover{
+    transform: scale(1.5);
+}
+
+.block3{
+    margin: 20px ;
+    width: 60px;
+    height: 60px;
+    background: cornflowerblue;
+}
+.block3:hover{
+    transform: skew(30deg);
+}
+
+.block4{
+    margin: 20px ;
+    width: 60px;
+    height: 60px;
+    background: cornflowerblue;
+}
+.block4:hover{
+    transform: rotate(30deg);
+}
+
+.block5{
+    margin: 20px ;
+    width: 60px;
+    height: 60px;
+    background: cornflowerblue;
+}
+.block5:hover{
+    transform: skewY(30deg);
+}
