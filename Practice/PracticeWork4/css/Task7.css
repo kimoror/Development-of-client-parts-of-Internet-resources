@@ -1,0 +1,7 @@
+.img-container{
+    display: flex;
+    flex-direction: row;
+}
+img:hover{
+    border: 2px solid grey;
+}
