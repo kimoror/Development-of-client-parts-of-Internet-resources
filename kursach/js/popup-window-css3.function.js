@@ -12,7 +12,6 @@
 		el.addEventListener('click', function(e) {
 			var modalId	= el.getAttribute('data-modal'),//возвращает значение указанного атрибута элемента.
 				modal	= document.getElementById(modalId);
-
 			modalShow(modal);
 		});
 	});
@@ -40,10 +39,11 @@
 				modal.classList.remove('fadeIn');
 				modal.classList.add('fadeOut');
 			});
-
 			overlay.classList.remove('fadeIn');
 			overlay.classList.add('fadeOut');
 			mStatus = false;
+			//document.getElementById('buy').onclick = function (){alert("Спасибо за заказ! Мы скоро вам перезвоним!")}
+
 		}
 	}
 })();

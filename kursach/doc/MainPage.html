@@ -6,9 +6,15 @@
     <title>Bookshelf</title>
     <link href="../css/Head.css" rel="stylesheet" type="text/css">
     <link href="../css/Menu.css" rel="stylesheet"  type="text/css">
-    <link href = "../css/MainPage/NewBooks.css" rel="stylesheet" type="text/css">
+    <link href = "../css/MainPage/Section.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="../css/bootstrap.min.css" >
     <link href="../css/popup-window.css" rel="stylesheet">
+    <script type="text/javascript">
+        function validate_form ( )
+        {
+            alert("Спасибо за заказ! Мы скоро перезвоним вам")
+        }
+    </script>
 </head>
 <body>
 <header>
@@ -16,11 +22,11 @@
         <div class="underTitle">Интернет-магазин</div>
         <div>
             <ul class="menu-main">
-                <li><a href="MainPage.html" class="current"> Главное</a></li>
-                <li><a href="Books.html">Книги</a></li>
-                <li><a href="ForYou.html">Для вас</a></li>
-                <li><a href="PersonalAccount.html">Личный кабинет</a></li>
-                <li><a href="Contacts.html">Контакты</a></li>
+                <li><a href="MainPage.html" class="current" style="text-decoration: none;"> Главное</a></li>
+                <li><a href="Books.html" style="text-decoration: none;">Книги</a></li>
+                <li><a href="ForYou.html" style="text-decoration: none;">Для вас</a></li>
+                <li><a href="PersonalAccount.html" style="text-decoration: none;">Личный кабинет</a></li>
+                <li><a href="Contacts.html" style="text-decoration: none;">Контакты</a></li>
             </ul>
         </div>
     </header>
@@ -63,11 +69,11 @@
                     </div><!-- Конец карточки -->
                 </div>
                 <div class="col-md-6 col-xl-3">
-                    <div class="card mx-auto mb-4 cardTransform" style="max-width: 300px;border: none">
+                    <div class="card mx-auto mb-4 cardTransform" style="max-width: 300px;border: none;">
                         <!-- Изображение -->
                         <img class="card-img-top imgSize" src="../img/Books/ObshenieVsegoZhivogo.png" alt="...">
                         <!-- Текстовый контент -->
-                        <div class="card-body">
+                        <div class="card-body" style="padding: 0.9rem;">
                             <h4 class="card-title">Заголовок</h4>
                             <p class="card-text hiddenText">Каждый веб-разработчик знает, что такое текст-«рыба». Текст этот, несмотря на
                                 название, не имеет никакого отношения к обитателям водоемов.</p>
@@ -81,14 +87,16 @@
                         <!-- Изображение -->
                         <img class="card-img-top imgSize" src="../img/Books/MilashkaNaVirazhe.jpg" alt="...">
                         <!-- Текстовый контент -->
-                        <div class="card-body">
-                            <h4 class="card-title">Милашка на вираже</h4>
+                        <div class="card-body" style="padding: 0.7rem;">
+                            <h4 class="card-title" style="margin-bottom:.5rem">Милашка на вираже</h4>
                             <h5>Дарья Донцова</h5>
                             <p class="card-text hiddenText">Семья становится счастливой, когда тараканы в головах мужа и жены начинают дружить семьями..</p>
+                            <h6>470 руб</h6>
                             <button type="button" class="btn btn-dark" style="color: #feb386"
                                     data-modal="modal_1">Подробнее</button>
                             <button type="button" class="btn btn-dark" style="color: #feb386"
                                     data-modal="modal_buy">Купить</button>
+
                         </div>
                     </div><!-- Конец карточки -->
                 </div>
@@ -97,24 +105,34 @@
     </div>
 
 <!--Модальное окно для кнопки "Купить"-->
-
+<!--TODO исправить неработающий required https://qna.habr.com/q/321803-->
 <div class="overlay" data-close=""></div>
 <div id="modal_buy" class="dlg-modal">
-    <form>
+    <form name = "contact_form" onsubmit="return validate_form ( );">
         <div class="container">
             <h1>Купить сейчас</h1>
-            <p>Заполните данные и через несколько минут вам перезвонит наш менеджер для подтверждения заказа.</p>
+            <p>Заполните данные и через несколько минут вам перезвонит наш менеджер для подтверждения заказа. Чтобы отменить закрыть окно нажмите Esc или кликните в любом свободном месте на экране</p>
             <hr>
             <label><b>ФИО</b></label>
-            <input type="text" placeholder="Иванов Иван Иванович" autofocus required>
+            <input type="text"
+                   placeholder="Иванов Иван Иванович"
+                   pattern="[А-яа-я]+[ ][А-яа-я]+[ ][А-яа-я]+"
+                   title="Введите кириллицой имя фамилию отчество разделяя слова пробелами."
+                   required="">
             <br>
             <label><b>Мобильный телефон</b></label>
-            <input type="tel" placeholder="+7(910)4474732" required>
+            <input type="tel"
+                   placeholder="+79104474732"
+                   pattern="[\+]?[0-9]{11}"
+                   required="">
 
             <div class="clearfix">
-                <button type="reset" class="btn btn-dark" style="color:#feb386; ">Cброс</button>
-                <button class="btn btn-dark" style="color:#feb386;">Отмена</button>
-                <button type="submit" class="btn btn-dark" title = "Нажмите, чтобы подтвердить свои данные и ожидайте звонка"
+                <button type="reset"
+                        class="btn btn-dark"
+                        title = "Нажмите, чтобы очистить все поля"
+                        style="color:#feb386;">Cброс</button>
+                <button type = "submit" class="btn btn-dark"
+                        title = "Нажмите, чтобы подтвердить свои данные"
                         style="color:#feb386;">Купить</button>
             </div>
         </div>
@@ -134,6 +152,6 @@
 
 <script>var typeAnimate = 'fade';</script>
 <script src="../js/popup-window-css3.function.js"></script>
-
+<script src="../js/buy-succes-message.js"></script>
 </body>
 </html>
