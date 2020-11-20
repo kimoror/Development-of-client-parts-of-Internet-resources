@@ -2,9 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb92825c-1fe2-4880-a335-b55614aaa8a4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../PracticeWork4/doc/Task10.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Task12.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/Task12.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PracticeWork2/doc/Task1Home.html" beforeDir="false" afterPath="$PROJECT_DIR$/../PracticeWork2/doc/Task1Home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/Task11.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/Task11.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PracticeWork2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PracticeWork2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PracticeWork4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PracticeWork4/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../kursach/Help/Declarations" beforeDir="false" afterPath="$PROJECT_DIR$/../../kursach/Help/Declarations" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../kursach/Help/links.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../kursach/Help/links.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../kursach/css/note.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../kursach/css/note.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../kursach/css/popup-window.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../kursach/css/popup-window.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../kursach/doc/ForYou.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../kursach/doc/ForYou.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../kursach/doc/MainPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../kursach/doc/MainPage.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +47,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -87,6 +96,8 @@
       <workItem from="1602324381033" duration="110000" />
       <workItem from="1602885168471" duration="50000" />
       <workItem from="1603308995258" duration="760000" />
+      <workItem from="1604947211829" duration="4393000" />
+      <workItem from="1605222109886" duration="359000" />
     </task>
     <servers />
   </component>

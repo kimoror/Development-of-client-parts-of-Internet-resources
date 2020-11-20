@@ -12,7 +12,7 @@ body
     justify-content: flex-start;
 }
 
-.diagraph-sector
+.diagraph-body
 {
     display: flex;
     flex-direction: column;
@@ -21,7 +21,7 @@ body
     padding-left: 20px;
 }
 
-.diagraph-sector-10
+.diagraph-10-percentes
 {
     position: relative;
     width: 40px;
@@ -29,7 +29,7 @@ body
     background-color: red;
 }
 
-.diagraph-sector-25
+.diagraph-25-percentes
 {
     position: relative;
     width: 40px;
@@ -37,7 +37,7 @@ body
     background-color: orange;
 }
 
-.diagraph-sector-50
+.diagraph-50-percentes
 {
     position: relative;
     width: 40px;
@@ -45,7 +45,7 @@ body
     background-color: yellow;
 }
 
-.diagraph-sector-75
+.diagraph-75-percentes
 {
     position: relative;
     width: 40px;
@@ -53,7 +53,7 @@ body
     background-color: greenyellow;
 }
 
-.diagraph-sector-100
+.diagraph-100-percentes
 {
     position: relative;
     width: 40px;

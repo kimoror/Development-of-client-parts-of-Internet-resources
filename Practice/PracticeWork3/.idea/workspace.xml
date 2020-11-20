@@ -2,12 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f0a89dc3-210d-4b24-89e6-ada14901ca07" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../PracticeWork4/doc/Task10.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PracticeWork1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PracticeWork1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PracticeWork1/doc/Task11.html" beforeDir="false" afterPath="$PROJECT_DIR$/../PracticeWork1/doc/Task11.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PracticeWork2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PracticeWork2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../kursach/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../kursach/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../kursach/css/Head.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../kursach/css/Head.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../kursach/css/MainPage/NewBooks.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../kursach/css/MainPage/NewBooks.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../kursach/css/Menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../kursach/css/Menu.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PracticeWork4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PracticeWork4/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../kursach/Help/Declarations" beforeDir="false" afterPath="$PROJECT_DIR$/../../kursach/Help/Declarations" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../kursach/Help/links.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../kursach/Help/links.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../kursach/css/note.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../kursach/css/note.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../kursach/css/popup-window.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../kursach/css/popup-window.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../kursach/doc/ForYou.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../kursach/doc/ForYou.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../kursach/doc/MainPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../kursach/doc/MainPage.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,7 +41,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PracticeWork1/doc/Task11.html" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -77,6 +81,7 @@
       <workItem from="1604141614542" duration="83000" />
       <workItem from="1604421685559" duration="1939000" />
       <workItem from="1604494864445" duration="1360000" />
+      <workItem from="1605222570744" duration="55000" />
     </task>
     <servers />
   </component>

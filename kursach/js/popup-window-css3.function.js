@@ -2,7 +2,6 @@
 
 	var overlay	= document.querySelector('.overlay'),
 		mOpen	= document.querySelectorAll('[data-modal]'),
-		// mOpen = document.querySelectorAll('')
 		mClose	= document.querySelectorAll('[data-close]')
 		mStatus	= false;// флаг всплывающего окна: false - окно закрыто, true - открыто
 
@@ -38,12 +37,12 @@
 
 			[].forEach.call(modals, function(modal) {
 				modal.classList.remove('fadeIn');
-				modal.classList.add('fadeOut');
+				// modal.classList.add('fadeOut');
 			});
 			overlay.classList.remove('fadeIn');
 			overlay.classList.add('fadeOut');
 			mStatus = false;
-			//document.getElementById('buy').onclick = function (){alert("Спасибо за заказ! Мы скоро вам перезвоним!")}
+
 
 		}
 	}
