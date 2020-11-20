@@ -2,7 +2,8 @@
 
 	var overlay	= document.querySelector('.overlay'),
 		mOpen	= document.querySelectorAll('[data-modal]'),
-		mClose	= document.querySelectorAll('[data-close]'),
+		// mOpen = document.querySelectorAll('')
+		mClose	= document.querySelectorAll('[data-close]')
 		mStatus	= false;// флаг всплывающего окна: false - окно закрыто, true - открыто
 
 	if (mOpen.length == 0) //если нет всплывающих окон, то завершае работу скрипта
@@ -12,7 +13,7 @@
 		el.addEventListener('click', function(e) {
 			var modalId	= el.getAttribute('data-modal'),//возвращает значение указанного атрибута элемента.
 				modal	= document.getElementById(modalId);
-			modalShow(modal);
+				modalShow(modal);
 		});
 	});
 

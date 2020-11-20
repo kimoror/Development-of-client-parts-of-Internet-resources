@@ -1,1 +1,0 @@
-// document.getElementById('buy').onclick = function (){alert("Спасибо за заказ! Мы скоро вам перезвоним!")}
