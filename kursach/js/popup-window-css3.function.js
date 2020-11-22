@@ -4,6 +4,7 @@
 		mOpen	= document.querySelectorAll('[data-modal]'),
 		mClose	= document.querySelectorAll('[data-close]')
 		mStatus	= false;// флаг всплывающего окна: false - окно закрыто, true - открыто
+	var body = document.querySelector("body");
 
 	if (mOpen.length == 0) //если нет всплывающих окон, то завершае работу скрипта
 		return;
@@ -13,6 +14,7 @@
 			var modalId	= el.getAttribute('data-modal'),//возвращает значение указанного атрибута элемента.
 				modal	= document.getElementById(modalId);
 				modalShow(modal);
+			body.style.overflow = 'hidden';
 		});
 	});
 
@@ -37,6 +39,7 @@
 
 			[].forEach.call(modals, function(modal) {
 				modal.classList.remove('fadeIn');
+				body.style.overflow = '';
 			});
 			overlay.classList.remove('fadeIn');
 			overlay.classList.add('fadeOut');
