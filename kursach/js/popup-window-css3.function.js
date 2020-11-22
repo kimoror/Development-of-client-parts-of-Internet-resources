@@ -37,7 +37,6 @@
 
 			[].forEach.call(modals, function(modal) {
 				modal.classList.remove('fadeIn');
-				// modal.classList.add('fadeOut');
 			});
 			overlay.classList.remove('fadeIn');
 			overlay.classList.add('fadeOut');

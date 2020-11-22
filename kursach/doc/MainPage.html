@@ -16,7 +16,7 @@
         }
     </script>
 </head>
-<body>
+<body class = "lock">
 <header>
         <div class = "title">Bookshelf</div>
         <div class="underTitle">Интернет-магазин</div>
@@ -31,8 +31,8 @@
         </div>
     </header>
     <!-- Раздел новинок -->
-    <div class="novelties">
-      <h2 class="newsTitle">Новинки</h2>
+    <div class="book-block">
+      <h2 class="block-title">Новинки</h2>
       <div class = "delimetr"></div>
         <div class="container" style="padding-top: 40px;">
 
@@ -40,17 +40,17 @@
 
             <div class="row">
                 <div class="col-md-6 col-xl-3">
-                    <div class="card mx-auto mb-4 cardTransform" style="max-width: 300px; border: none">
+                    <div class="card mx-auto mb-4 cardTransform" style="max-width: 250px; max-height: 250px; border: none">
                         <!-- Изображение -->
-                        <img class="card-img-top imgSize" src="../img/Books/MilashkaNaVirazhe.jpg" alt="...">
+                        <img class="card-img-top imgSize" src="../img/Books/MainPage/DevochkaSova.webp" alt="...">
                         <!-- Текстовый контент -->
                         <div class="card-body" style="padding: 0.7rem;">
-                            <h4 class="card-title" style="margin-bottom:.5rem">Милашка на вираже</h4>
-                            <h5>Дарья Донцова</h5>
-                            <p class="card-text hiddenText">Семья становится счастливой, когда тараканы в головах мужа и жены начинают дружить семьями..</p>
-                            <h6>Цена: 470 руб</h6>
+                            <h4 class="card-title" style="margin-bottom:.5rem">Девочка по имени Сова</h4>
+                            <h5>Эми Уилсон</h5>
+                            <p class="card-text hiddenText">Девочка с необычным именем Сова очень хочет узнать, кто её отец. Но сделать это не так-то просто – вместо ответов</p>
+                            <h6>Цена: 714 <strike>1296</strike> руб.</h6>
                             <button type="button" class="btn btn-dark" style="color: #feb386"
-                                    data-modal="modal_1">Подробнее</button>
+                                    data-modal="modal_DevochkaSova">Подробнее</button>
                             <button type="button" class="btn btn-dark" style="color: #feb386"
                                     data-modal="modal_buy">Купить</button>
                         </div>
@@ -59,15 +59,15 @@
                 <div class="col-md-6 col-xl-3">
                     <div class="card mx-auto mb-4 cardTransform" style="max-width: 300px; border: none">
                         <!-- Изображение -->
-                        <img class="card-img-top imgSize" src="../img/Books/MilashkaNaVirazhe.jpg" alt="...">
+                        <img class="card-img-top imgSize" src="../img/Books/MainPage/EraMedvedey.jpg" alt="...">
                         <!-- Текстовый контент -->
                         <div class="card-body" style="padding: 0.7rem;">
-                            <h4 class="card-title" style="margin-bottom:.5rem">Милашка на вираже</h4>
-                            <h5>Дарья Донцова</h5>
-                            <p class="card-text hiddenText">Семья становится счастливой, когда тараканы в головах мужа и жены начинают дружить семьями..</p>
-                            <h6>Цена: 470 руб</h6>
+                            <h4 class="card-title" style="margin-bottom:.5rem">Эра<br>медведей </h4>
+                            <h5>Максим Бобров</h5>
+                            <p class="card-text hiddenText">Еще вчера Илья был легендой киберспорта, а сегодня он никому не нужный неудачник. Но однажды  его жизнь круто</p>
+                            <h6>Цена: 374 руб</h6>
                             <button type="button" class="btn btn-dark" style="color: #feb386"
-                                    data-modal="modal_1">Подробнее</button>
+                                    data-modal="modal_EraMedvedey">Подробнее</button>
                             <button type="button" class="btn btn-dark" style="color: #feb386"
                                     data-modal="modal_buy">Купить</button>
                         </div>
@@ -76,15 +76,15 @@
                 <div class="col-md-6 col-xl-3">
                     <div class="card mx-auto mb-4 cardTransform" style="max-width: 300px; border: none">
                         <!-- Изображение -->
-                        <img class="card-img-top imgSize" src="../img/Books/MilashkaNaVirazhe.jpg" alt="...">
+                        <img class="card-img-top imgSize" src="../img/Books/MainPage/ObshenieVsegoZhivogo.png" alt="...">
                         <!-- Текстовый контент -->
                         <div class="card-body" style="padding: 0.7rem;">
-                            <h4 class="card-title" style="margin-bottom:.5rem">Милашка на вираже</h4>
-                            <h5>Дарья Донцова</h5>
-                            <p class="card-text hiddenText">Семья становится счастливой, когда тараканы в головах мужа и жены начинают дружить семьями..</p>
-                            <h6>Цена: 470 руб</h6>
+                            <h4 class="card-title" style="margin-bottom:.5rem">Общение всего живого</h4>
+                            <h5>Жоэль Бокар</h5>
+                            <p class="card-text hiddenText">Долгое время считалось, что общаться способны только представители вида Homo sapiens.  Все живые существа</p>
+                            <h6>Цена: 317 руб.</h6>
                             <button type="button" class="btn btn-dark" style="color: #feb386"
-                                    data-modal="modal_milashka2">Подробнее</button>
+                                    data-modal="modal_ObshenieVsegoZhivogo">Подробнее</button>
                             <button type="button" class="btn btn-dark" style="color: #feb386"
                                     data-modal="modal_buy">Купить</button>
                         </div>
@@ -93,15 +93,15 @@
                 <div class="col-md-6 col-xl-3">
                     <div class="card mx-auto mb-4 cardTransform" style="max-width: 300px; border: none">
                         <!-- Изображение -->
-                        <img class="card-img-top imgSize" src="../img/Books/MilashkaNaVirazhe.jpg" alt="...">
+                        <img class="card-img-top imgSize" src="../img/Books/MainPage/MilashkaNaVirazhe.jpg" alt="...">
                         <!-- Текстовый контент -->
                         <div class="card-body" style="padding: 0.7rem;">
                             <h4 class="card-title" style="margin-bottom:.5rem">Милашка на вираже</h4>
                             <h5>Дарья Донцова</h5>
-                            <p class="card-text hiddenText">Семья становится счастливой, когда тараканы в головах мужа и жены начинают дружить семьями..</p>
-                            <h6>Цена: 470 руб</h6>
+                            <p class="card-text hiddenText">Семья становится счастливой, когда тараканы в головах мужа и жены начинают дружить семьями. Так заявила Виоле</p>
+                            <h6>Цена: 470 руб.</h6>
                             <button type="button" class="btn btn-dark" style="color: #feb386"
-                                    data-modal="modal_milashka" >Подробнее</button>
+                                    data-modal="modal_MilashkaNaVirazhe" >Подробнее</button>
                             <button type="button" class="btn btn-dark" style="color: #feb386"
                                     data-modal="modal_buy" >Купить</button>
                         </div>
@@ -111,22 +111,131 @@
         </div>
     </div>
 
+<!--Раздел главных скидок-->
+<div class="book-block">
+    <h2 class="block-title">Сумашедшие скидки</h2>
+    <div class = "delimetr"></div>
+    <div class="container" style="padding-top: 40px;">
+        <!--Карточки-->
+        <div class="row">
+            <div class="col-md-6 col-xl-3">
+                <div class="card mx-auto mb-4 cardTransform" style="max-width: 250px; max-height: 250px; border: none">
+                    <!-- Изображение -->
+                    <img class="card-img-top imgSize" src="../img/Books/MainPage/SkySkiper.jpg" alt="...">
+                    <!-- Текстовый контент -->
+                    <div class="card-body" style="padding: 0.7rem;">
+                        <h4 class="card-title" style="margin-bottom:.5rem">Небесный<br>шкипер</h4>
+                        <h5>Антон Демченко</h5>
+                        <p class="card-text hiddenText">Удача сопутствует сильным. И бывший меллингский беспризорник Рик, а ныне шкипер собственной возду</p>
+                        <h6>Цена: 569 <strike>990</strike> руб.</h6>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_SkySkiper">Подробнее</button>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_buy">Купить</button>
+                    </div>
+                </div><!-- Конец карточки -->
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <div class="card mx-auto mb-4 cardTransform" style="max-width: 300px; border: none">
+                    <!-- Изображение -->
+                    <img class="card-img-top imgSize" src="../img/Books/MainPage/EraMedvedey.jpg" alt="...">
+                    <!-- Текстовый контент -->
+                    <div class="card-body" style="padding: 0.7rem;">
+                        <h4 class="card-title" style="margin-bottom:.5rem">Эра<br>медведей </h4>
+                        <h5>Максим Бобров</h5>
+                        <p class="card-text hiddenText">Еще вчера Илья был легендой киберспорта, а сегодня он никому не нужный неудачник. Но однажды  его жизнь круто</p>
+                        <h6>Цена: 374 руб</h6>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_EraMedvedey">Подробнее</button>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_buy">Купить</button>
+                    </div>
+                </div><!-- Конец карточки -->
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <div class="card mx-auto mb-4 cardTransform" style="max-width: 300px; border: none">
+                    <!-- Изображение -->
+                    <img class="card-img-top imgSize" src="../img/Books/MainPage/ObshenieVsegoZhivogo.png" alt="...">
+                    <!-- Текстовый контент -->
+                    <div class="card-body" style="padding: 0.7rem;">
+                        <h4 class="card-title" style="margin-bottom:.5rem">Общение всего живого</h4>
+                        <h5>Жоэль Бокар</h5>
+                        <p class="card-text hiddenText">Долгое время считалось, что общаться способны только представители вида Homo sapiens.  Все живые существа</p>
+                        <h6>Цена: 317 руб.</h6>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_ObshenieVsegoZhivogo">Подробнее</button>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_buy">Купить</button>
+                    </div>
+                </div><!-- Конец карточки -->
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <div class="card mx-auto mb-4 cardTransform" style="max-width: 300px; border: none">
+                    <!-- Изображение -->
+                    <img class="card-img-top imgSize" src="../img/Books/MainPage/MilashkaNaVirazhe.jpg" alt="...">
+                    <!-- Текстовый контент -->
+                    <div class="card-body" style="padding: 0.7rem;">
+                        <h4 class="card-title" style="margin-bottom:.5rem">Милашка на вираже</h4>
+                        <h5>Дарья Донцова</h5>
+                        <p class="card-text hiddenText">Семья становится счастливой, когда тараканы в головах мужа и жены начинают дружить семьями. Так заявила Виоле</p>
+                        <h6>Цена: 470 руб.</h6>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_MilashkaNaVirazhe" >Подробнее</button>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_buy" >Купить</button>
+                    </div>
+                </div><!-- Конец карточки -->
+            </div>
+        </div>
+    </div>
+</div>
+
+
 <!--Кнопки с Аннотациями-->
 
 <!-- Милошка на проводе-->
 <div class="overlay" data-close=""></div>
-<div id="modal_milashka" class="dlg-modal">
+<div id="modal_MilashkaNaVirazhe" class="dlg-modal">
     <span class="closer" data-close=""></span>
     <h4>Аннотация</h4>
     Семья становится счастливой, когда тараканы в головах мужа и жены начинают дружить семьями. Так заявила Виоле Таракановой её бывшая одноклассница Ирина. Они не виделись много лет, но сейчас Ире нужна помощь. Вилка не может ей отказать и узнает странную историю: еще одна их одноклассница Настя Тихонова в свое время удачно вышла замуж за богатого бизнесмена, жила счастливо, но трагически погибла в автомобильной катастрофе. А совсем недавно Ира встретилась с одной женщиной и узнала в ней … Настю, поэтому уверена, что Тихонова жива! Виоле надо непременно доказать, что смерть на шоссе - спектакль. Таракановой совсем не хочется помогать Ирине, но они с Дмитриевым вынуждены разбираться в этом запутанном деле. Степан и Виола проделали колоссальную работу, и вывели на чистую воду того, кого меньше всего ожидали…
 </div>
 
-<!-- Милошка на проводе2-->
+<!-- Общение всего живого-->
 <div class="overlay" data-close=""></div>
-<div id="modal_milashka2" class="dlg-modal">
+<div id="modal_ObshenieVsegoZhivogo" class="dlg-modal">
     <span class="closer" data-close=""></span>
     <h4>Аннотация</h4>
-    Семья становится счастливой, когда тараканы в головах мужа и жены начинают дружить семьями. Так заявила Виоле Таракановой её бывшая одноклассница Ирина. Они не виделись много лет, но сейчас Ире нужна помощь. Вилка не может ей отказать и узнает странную историю: еще одна их одноклассница Настя Тихонова в свое время удачно вышла замуж за богатого бизнесмена, жила счастливо, но трагически погибла в автомобильной катастрофе. А совсем недавно Ира встретилась с одной женщиной и узнала в ней … Настю, поэтому уверена, что Тихонова жива! Виоле надо непременно доказать, что смерть на шоссе - спектакль. Таракановой совсем не хочется помогать Ирине, но они с Дмитриевым вынуждены разбираться в этом запутанном деле. Степан и Виола проделали колоссальную работу, и вывели на чистую воду того, кого меньше всего ожидали…
+    Долгое время считалось, что общаться способны только представители вида Homo sapiens. Но речь не единственный способ общения. Все живые существа: животные, растения, бактерии, грибы и даже каждая их клетка - используют химическое общение, зачастую очень сложное и исключительно эффективное, а многие, кроме того, применяют для связи друг с другом жесты, звуки и световые сигналы. И дело не просто в удовольствии от контактов с себе подобными. Коммуникация очень важна для жизни и эволюции - настолько, что высказывание Декарта "Я мыслю, следовательно, я существую" вполне можно было бы заменить фразой "Я общаюсь, следовательно, я существую".
+</div>
+
+<!-- Эра медведей-->
+<div class="overlay" data-close=""></div>
+<div id="modal_EraMedvedey" class="dlg-modal">
+    <span class="closer" data-close=""></span>
+    <h4>Аннотация</h4>
+    Еще вчера Илья был легендой киберспорта, а сегодня он никому не нужный неудачник. Но однажды его жизнь круто меняется: Илья узнает, что его дочь Варя тоже стала киберспортсменкой. Однако, Варя не только талантлива, но и крайне цинична, а значит она может повторить его судьбу. Чтобы стать для дочери примером, Илья решает вернуться в киберспорт и сделать невозможное – выиграть чемпионат мира. Токсичная среда, разрушенная репутация и возраст встают на пути к его цели. Но самое главное – Варя презирает отца и всеми силами пытается похоронить его устремления.
+    <br><br>
+    Роман открывает изнанку киберспорта, в котором нередко восемнадцатилетние игроки становятся долларовыми миллионерами, но вместе с тем там царит безграничный
+    цинизм и рушатся судьбы многих молодых людей.
+</div>
+
+<!--Небесный шкипер-->
+<!-- Эра медведей-->
+<div class="overlay" data-close=""></div>
+<div id="modal_SkySkiper" class="dlg-modal">
+    <span class="closer" data-close=""></span>
+    <h4>Аннотация</h4>
+    Удача сопутствует сильным. И бывший меллингский беспризорник Рик, а ныне шкипер собственной воздушной яхты «Мурена» Рихард Бюлов всей своей жизнью подтверждает эту старую истину. Нет в небесах такой пиратской «акулы», что могла бы поймать верткую и зубастую «Мурену», как нет на земле людей, что могли бы принудить ее шкипера к службе. Силой ли, хитростью — Рихард всегда найдет адекватный ответ. И горе тому, кто решит сделать юного небесного волка своим врагом. Пираты, уничтожившие его родной Меллинг, тому свидетели.
+</div>
+
+<!-- Девочка по имени Сова-->
+<div class="overlay" data-close=""></div>
+<div id="modal_DevochkaSova" class="dlg-modal">
+    <span class="closer" data-close=""></span>
+    <h4>Аннотация</h4>
+    Девочка с необычным именем Сова очень хочет узнать, кто её отец. Но сделать это не так-то просто – вместо ответов мама постоянно рассказывает ей какие-то сказки про вечную зиму... А тут ещё лучшая подруга впадает в депрессию из-за семейных проблем, и в классе появляется новый мальчик, который не даёт Сове проходу…
+    Однажды Сова замечает странные ледяные узоры на своей коже, а её слёзы почему-то начинают превращаться в ледышки. И тогда она во что бы то ни стало решает разгадать тайну своего происхождения…
 </div>
 
 <!--Модальное окно для кнопки "Купить"-->

@@ -1,17 +1,17 @@
-.novelties .newsTitle{
+.book-block .block-title{
 text-align: center;
 font-size: 300%;
 font-weight: normal;
 font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 margin-top: 30px;
 }
-.novelties .delimetr{
+.book-block .delimetr{
   margin: 0 120px;
   border-bottom: 2px solid black;
   transition-duration: .6s;
   box-shadow: 0 15px 25px 2px #918a8a;
 }
- .novelties:hover .delimetr{
+ .book-block:hover .delimetr{
   margin: 0 40px;
 }
 
@@ -50,10 +50,10 @@ margin-top: 30px;
 
 @media only screen and (max-width: 550px) {
 
-  .novelties .delimetr{
+  .book-block .delimetr{
     margin: 0 40px;
   }
-	.novelties .newsTitle{
+	.book-block .block-title{
 	   font-size: 200%;
    }
 }

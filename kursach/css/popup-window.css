@@ -33,7 +33,7 @@
 	top: 180px;
 	z-index: 130;
 	margin-left: -288px;
-	padding: 47px 36px;
+	padding: 20px 36px;
 	background: #ffb486;
 	-webkit-border-radius: 6px;
 	border-radius: 6px;
@@ -88,6 +88,7 @@
 .fadeIn, .fadeOut, .slideInDown, .slideOutUp {
 	-webkit-animation-duration: 0.4s;
 	animation-duration: 0.4s;
+	overflow: hidden;
 	animation-timing-function: ease-out;}
 
 @keyframes fadeIn {

@@ -15,7 +15,6 @@
 .menu-main li:last-child:after {content: none;}
 .menu-main a {
   text-decoration: none; /*Подчёркивание выключено*/
-  font-family: Impact, Charcoal, sans-serif;
   letter-spacing: 1px;
   position: relative;
   padding-bottom: 20px;
