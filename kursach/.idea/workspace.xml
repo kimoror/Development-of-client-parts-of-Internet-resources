@@ -20,13 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c75f334b-2e30-46f7-9a12-ead7b575946e" name="Default Changelist" comment="Add atribute alt to img. Add book IgraNaNervah. Change example phone number to unreal&quot;">
-      <change afterPath="$PROJECT_DIR$/doc/All_Items.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Books.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/Stationery.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/Contacts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/ForYou.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/Classic.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doc/MainPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/MainPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/PersonalAccount.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/PersonalAccount.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +107,7 @@
       <workItem from="1606068768284" duration="36000" />
       <workItem from="1606068805655" duration="1257000" />
       <workItem from="1606070106624" duration="6801000" />
-      <workItem from="1606140007104" duration="3476000" />
+      <workItem from="1606140007104" duration="3571000" />
     </task>
     <task id="LOCAL-00001" summary="Add third window. Now, when I clicl on button three popup window opened">
       <created>1605852929213</created>
@@ -150,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606141830120</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Rename files and update head menu">
+      <created>1606144586826</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1606144586826</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,7 +175,8 @@
     <MESSAGE value="Add atribute alt to img. Add book IgraNaNervah. Change example phone number to unreal&quot;" />
     <MESSAGE value="Add two books: 1. Podsoznanie mozhet Vse 2.Slushayte. Ikusstvo effectivnogo obshenia" />
     <MESSAGE value="change labels in head menu. ForYou and Books" />
-    <option name="LAST_COMMIT_MESSAGE" value="change labels in head menu. ForYou and Books" />
+    <MESSAGE value="Rename files and update head menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rename files and update head menu" />
   </component>
   <component name="WindowStateProjectService">
     <state x="0" y="195" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604941304951">
@@ -272,11 +274,11 @@
     </state>
     <state width="499" height="398" key="SwitcherDM/0.0.1536.834/0.1080.1097.617@0.0.1536.834" timestamp="1606070810633" />
     <state width="623" height="498" key="SwitcherDM/0.20.1920.1060@0.20.1920.1060" timestamp="1604611214119" />
-    <state x="365" y="157" key="Vcs.Push.Dialog.v2" timestamp="1606141619067">
+    <state x="365" y="157" key="Vcs.Push.Dialog.v2" timestamp="1606144609047">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="365" y="157" key="Vcs.Push.Dialog.v2/0.0.1536.834/0.1080.1097.617@0.0.1536.834" timestamp="1606076896323" />
-    <state x="365" y="157" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1606141619067" />
+    <state x="365" y="157" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1606144609047" />
     <state x="456" y="220" key="Vcs.Push.Dialog.v2/0.20.1920.1060@0.20.1920.1060" timestamp="1605857803243" />
     <state x="536" y="247" key="run.anything.popup" timestamp="1605689971415">
       <screen x="0" y="20" width="1920" height="1060" />
