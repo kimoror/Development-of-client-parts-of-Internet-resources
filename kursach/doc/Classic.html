@@ -1,29 +1,439 @@
 <!DOCTYPE html>
-<!--https://habr.com/ru/company/edison/blog/343796/-->
-<html lang="en">
+
+<html lang="en ru" xmlns:data-create="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Bookshelf</title>
     <link href="../css/Head.css" rel="stylesheet" type="text/css">
     <link href="../css/Menu.css" rel="stylesheet"  type="text/css">
+    <link href = "../css/MainPage/Section.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css" >
+    <link href="../css/popup-window.css" rel="stylesheet">
+    <script type="text/javascript">
+        function validate_form ( )
+        {
+            alert("Спасибо за заказ! Мы скоро перезвоним вам")
+        }
+    </script>
 </head>
-<body>
+<body class = "lock">
 <header>
     <div class = "title">Bookshelf</div>
     <div class="underTitle">Интернет-магазин</div>
     <div>
         <ul class="menu-main">
-            <li><a href="MainPage.html" > Главное</a></li>
-            <li><a href="Stationery.html">Книги</a></li>
-            <li><a href="Classic.html" class="current">Для вас</a></li>
-            <li><a href="School.html">Личный кабинет</a></li>
-            <li><a href="Contacts.html">Контакты</a></li>
+            <li><a href="MainPage.html" style="text-decoration: none;"> Главное</a></li>
+            <li><a href="Classic.html" class="current" style="text-decoration: none;">Классика</a></li>
+            <li><a href="Stationery.html" style="text-decoration: none;">Канцтовары</a></li>
+            <li><a href="School.html" style="text-decoration: none;">К школе</a></li>
+            <li><a href="All_Items.html" style="text-decoration: none;">Все товары</a></li>
+            <li><a href="Contacts.html" style="text-decoration: none;">О нас</a></li>
         </ul>
     </div>
 </header>
-<!--<script>-->
-<!--    var years=prompt('Сколько вам лет?')-->
-<!--    alert('Вам '+years+' лет!')-->
-<!--</script>-->
+<!-- Раздел новинок -->
+<div class="book-block">
+    <h2 class="block-title">Пушкин - солнце русской поэзии</h2>
+    <div class = "delimetr"></div>
+    <div class="container" style="padding-top: 40px;">
+
+        <!--Карточки-->
+
+        <div class="row">
+            <div class="col-md-6 col-xl-3">
+                <div class="card mx-auto mb-4 cardTransform" style="max-width: 300px; border: none">
+                    <!-- Изображение -->
+                    <img class="card-img-top imgSize" src="../img/Books/Classic/EvgeniyOnegin.png" alt="EvgeinyOnegin.png">
+                    <!-- Текстовый контент -->
+                    <div class="card-body" style="padding: 0.7rem;">
+                        <h4 class="card-title" style="margin-bottom:.5rem">Евгений Онегин</h4>
+                        <h5>Александр Пушкин</h5>
+                        <p class="card-text hiddenText">Роман в стихах "Евгений Онегин" - "энциклопедия русской жизни" и "самое задушевное произведение...</p>
+                        <h6>Цена: 205 руб.</h6>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_EvgeniyOnegin">Подробнее</button>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_buy">Купить</button>
+                    </div>
+                </div><!-- Конец карточки -->
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <div class="card mx-auto mb-4 cardTransform" style="max-width: 300px; border: none">
+                    <!-- Изображение -->
+                    <img class="card-img-top imgSize" src="../img/Books/MainPage/EraMedvedey.jpg" alt="EraMedvedey.jpg">
+                    <!-- Текстовый контент -->
+                    <div class="card-body" style="padding: 0.7rem;">
+                        <h4 class="card-title" style="margin-bottom:.5rem">Эра<br>медведей </h4>
+                        <h5>Максим Бобров</h5>
+                        <p class="card-text hiddenText">Еще вчера Илья был легендой киберспорта, а сегодня он никому не нужный неудачник. Но однажды  его жизнь круто</p>
+                        <h6>Цена: 374 руб</h6>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_EraMedvedey">Подробнее</button>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_buy">Купить</button>
+                    </div>
+                </div><!-- Конец карточки -->
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <div class="card mx-auto mb-4 cardTransform" style="max-width: 300px; border: none">
+                    <!-- Изображение -->
+                    <img class="card-img-top imgSize" src="../img/Books/MainPage/ObshenieVsegoZhivogo.png" alt="ObshenieVsegoZhivogo.png">
+                    <!-- Текстовый контент -->
+                    <div class="card-body" style="padding: 0.7rem;">
+                        <h4 class="card-title" style="margin-bottom:.5rem">Общение всего живого</h4>
+                        <h5>Жоэль Бокар</h5>
+                        <p class="card-text hiddenText">Долгое время считалось, что общаться способны только представители вида Homo sapiens.  Все живые существа</p>
+                        <h6>Цена: 317 руб.</h6>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_ObshenieVsegoZhivogo">Подробнее</button>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_buy">Купить</button>
+                    </div>
+                </div><!-- Конец карточки -->
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <div class="card mx-auto mb-4 cardTransform" style="max-width: 300px; border: none">
+                    <!-- Изображение -->
+                    <img class="card-img-top imgSize" src="../img/Books/MainPage/MilashkaNaVirazhe.jpg" alt="MilashkaNaVirazhe.jpg">
+                    <!-- Текстовый контент -->
+                    <div class="card-body" style="padding: 0.7rem;">
+                        <h4 class="card-title" style="margin-bottom:.5rem">Милашка на вираже</h4>
+                        <h5>Дарья Донцова</h5>
+                        <p class="card-text hiddenText">Семья становится счастливой, когда тараканы в головах мужа и жены начинают дружить семьями. Так заявила Виоле</p>
+                        <h6>Цена: 470 руб.</h6>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_MilashkaNaVirazhe" >Подробнее</button>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_buy" >Купить</button>
+                    </div>
+                </div><!-- Конец карточки -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Раздел главных скидок-->
+<div class="book-block">
+    <h2 class="block-title">Сумашедшие скидки</h2>
+    <div class = "delimetr"></div>
+    <div class="container" style="padding-top: 40px;">
+        <!--Карточки-->
+        <div class="row">
+            <div class="col-md-6 col-xl-3">
+                <div class="card mx-auto mb-4 cardTransform" style="max-width: 300px; border: none">
+                    <!-- Изображение -->
+                    <img class="card-img-top imgSize" src="../img/Books/MainPage/SkySkiper.jpg" alt="SkySkiper.jpg">
+                    <!-- Текстовый контент -->
+                    <div class="card-body" style="padding: 0.7rem;">
+                        <h4 class="card-title" style="margin-bottom:.5rem">Небесный<br>шкипер</h4>
+                        <h5>Антон Демченко</h5>
+                        <p class="card-text hiddenText">Удача сопутствует сильным. И бывший меллингский беспризорник Рик, а ныне шкипер собственной возду</p>
+                        <h6>Цена: 569 <strike>990</strike> руб.</h6>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_SkySkiper">Подробнее</button>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_buy">Купить</button>
+                    </div>
+                </div><!-- Конец карточки -->
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <div class="card mx-auto mb-4 cardTransform" style="max-width: 300px; border: none">
+                    <!-- Изображение -->
+                    <img class="card-img-top imgSize" src="../img/Books/MainPage/TainikVDomeHudozhnika.png" alt="TainikVDomeHudozhnika.png">
+                    <!-- Текстовый контент -->
+                    <div class="card-body" style="padding: 0.7rem;">
+                        <h4 class="card-title" style="margin-bottom:.5rem">Тайник в доме хужожника</h4>
+                        <h5>Томара Михеева</h5>
+                        <p class="card-text hiddenText">Семья Крымовых приезжает на лето к бабушке. Её дом с башенками и Комнатой-без-углов - не просто дача, а без пяти минут филиал</p>
+                        <h6>Цена: 424 <strike>848</strike> руб</h6>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_TainikVDomeHudozhnika">Подробнее</button>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_buy">Купить</button>
+                    </div>
+                </div><!-- Конец карточки -->
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <div class="card mx-auto mb-4 cardTransform" style="max-width: 300px; border: none">
+                    <!-- Изображение -->
+                    <img class="card-img-top imgSize" src="../img/Books/MainPage/IUiduSRassvetom.jpg" alt="YaUyduSRassvetom.jpg">
+                    <!-- Текстовый контент -->
+                    <div class="card-body" style="padding: 0.7rem;">
+                        <h4 class="card-title" style="margin-bottom:.5rem">Я уйду с <br> Рассветом</h4>
+                        <h5>Холлоуэй Меган</h5>
+                        <p class="card-text hiddenText">Август 1944 года. Валлиец Риз Гравенор меряет шагами улицы только что освобожденного от фашист</фашист></p>
+                        <h6>Цена: 124 <strike>599</strike> руб.</h6>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_IUiduSRassvetom">Подробнее</button>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_buy">Купить</button>
+                    </div>
+                </div><!-- Конец карточки -->
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <div class="card mx-auto mb-4 cardTransform" style="max-width: 300px; border: none">
+                    <!-- Изображение -->
+                    <img class="card-img-top imgSize" src="../img/Books/MainPage/MinisterstvoSpravedlivosti.jpg" alt="MinisterstvoSpravedlivosti.jpg">
+                    <!-- Текстовый контент -->
+                    <div class="card-body" style="padding: 0.7rem;">
+                        <h4 class="card-title" style="margin-bottom:.5rem">Министерство справедливости</h4>
+                        <h5>Лев Гурский</h5>
+                        <p class="card-text hiddenText">Когда ржавые скрепы рассыпались и подлый мир канул в небытие, его вчерашние хозяева и их верные слуги шустро</p>
+                        <h6>Цена: 585 <strike>856</strike> руб.</h6>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_MinisterstvoSpravedlivosti" >Подробнее</button>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_buy" >Купить</button>
+                    </div>
+                </div><!-- Конец карточки -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Книги, способные перевернуть ваш разум...-->
+<div class="book-block">
+    <h2 class="block-title">Книги, способные перевернуть ваш разум...</h2>
+    <div class = "delimetr"></div>
+    <div class="container" style="padding-top: 40px;">
+        <!--Карточки-->
+        <div class="row">
+            <div class="col-md-6 col-xl-3">
+                <div class="card mx-auto mb-4 cardTransform" style="max-width: 300px; border: none">
+                    <!-- Изображение -->
+                    <img class="card-img-top imgSize" src="../img/Books/MainPage/RealnostVremeni.png" alt="RealnistVremeni.png">
+                    <!-- Текстовый контент -->
+                    <div class="card-body" style="padding: 0.7rem;">
+                        <h4 class="card-title" style="margin-bottom:.5rem">Реальность<br>времени</h4>
+                        <h5>Аймезен Жан-Клод</h5>
+                        <p class="card-text hiddenText">"Живи настоящим" - легко сказать, гораздо сложнее сделать. И причина не столько в психологии, сколько в самой природе времени и человека.</p>
+                        <h6>Цена: 518 руб.</h6>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_RealnostVremeni">Подробнее</button>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_buy">Купить</button>
+                    </div>
+                </div><!-- Конец карточки -->
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <div class="card mx-auto mb-4 cardTransform" style="max-width: 300px; border: none">
+                    <!-- Изображение -->
+                    <img class="card-img-top imgSize" src="../img/Books/MainPage/IgraNaNervah.png" alt="IgraNaNervah.png">
+                    <!-- Текстовый контент -->
+                    <div class="card-body" style="padding: 0.7rem;">
+                        <h4 class="card-title" style="margin-bottom:.5rem">Игра <br>на нервах</h4>
+                        <h5>Евгений Геншафт</h5>
+                        <p class="card-text hiddenText">Мы переживаем эмоции ежеминутно - радуемся, печалимся, ликуем, ненавидим, отчаиваемся</p>
+                        <h6>Цена: 403 руб</h6>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_IgraNaNervah">Подробнее</button>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_buy">Купить</button>
+                    </div>
+                </div><!-- Конец карточки -->
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <div class="card mx-auto mb-4 cardTransform" style="max-width: 300px; border: none">
+                    <!-- Изображение -->
+                    <img class="card-img-top imgSize" src="../img/Books/MainPage/Podsoznanie.jpg"
+                         alt="PodsoznanieMozhetvse.jpg">
+                    <!-- Текстовый контент -->
+                    <div class="card-body" style="padding: 0.7rem;">
+                        <h4 class="card-title" style="margin-bottom:.5rem">Подсознание может всё</h4>
+                        <h5>Джон Кехо</h5>
+                        <p class="card-text hiddenText">Автор этой книги в уединении среди лесов канадской провинции Британская Колумбия три года сосредоточенно</p>
+                        <h6>Цена: 362 <strike>452</strike> руб.</h6>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_Podsoznanie">Подробнее</button>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_buy">Купить</button>
+                    </div>
+                </div><!-- Конец карточки -->
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <div class="card mx-auto mb-4 cardTransform" style="max-width: 300px; border: none">
+                    <!-- Изображение -->
+                    <img class="card-img-top imgSize" src="../img/Books/MainPage/Slushayte.png" alt="Slushayre.png">
+                    <!-- Текстовый контент -->
+                    <div class="card-body" style="padding: 0.7rem;">
+                        <h4 class="card-title" style="margin-bottom:.5rem">Слушайте! Искусство общения</h4>
+                        <h5>Дейл Карнеги</h5>
+                        <p class="card-text hiddenText">Почему порой так сложно понять друг друга в общении с коллегами, членами семьи или друзьями? Умение по-настоящему</p>
+                        <h6>Цена: 403 руб.</h6>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_Slushayte" >Подробнее</button>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_buy" >Купить</button>
+                    </div>
+                </div><!-- Конец карточки -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Кнопки с Аннотациями-->
+
+<!-- Евгений Онегин-->
+<div class="overlay" data-close=""></div>
+<div id="modal_EvgeniyOnegin" class="dlg-modal">
+    <span class="closer" data-close=""></span>
+    <h4>Аннотация</h4>
+    Роман в стихах "Евгений Онегин" - "энциклопедия русской жизни" и "самое задушевное произведение Пушкина, самое любимое дитя его фантазии, и можно указать на немногие творения, в которых личность поэта отразилась бы с такою полнотою, светло и ясно, как отразилась в "Онегине" личность Пушкина", как писал В.Г. Белинский.
+    <br><br>
+    Александр Пушкин работал над романом в стихах «Евгений Онегин» более семи лет. Сам автор назвал эту работу подвигом. Главы публиковали по мере их написания в
+    разные годы.
+    <br>
+    А у современного читателя есть возможность прочесть весь роман сразу. И узнать историю любви Татьяны и Онегина, открыв для себя чистоту и красоту любящего
+    сердца и восхититься блистательным описанием своего времени гениальным поэтом.
+</div>
+
+<!-- Общение всего живого-->
+<div class="overlay" data-close=""></div>
+<div id="modal_ObshenieVsegoZhivogo" class="dlg-modal">
+    <span class="closer" data-close=""></span>
+    <h4>Аннотация</h4>
+    Долгое время считалось, что общаться способны только представители вида Homo sapiens. Но речь не единственный способ общения. Все живые существа: животные, растения, бактерии, грибы и даже каждая их клетка - используют химическое общение, зачастую очень сложное и исключительно эффективное, а многие, кроме того, применяют для связи друг с другом жесты, звуки и световые сигналы. И дело не просто в удовольствии от контактов с себе подобными. Коммуникация очень важна для жизни и эволюции - настолько, что высказывание Декарта "Я мыслю, следовательно, я существую" вполне можно было бы заменить фразой "Я общаюсь, следовательно, я существую".
+</div>
+
+<!-- Эра медведей-->
+<div class="overlay" data-close=""></div>
+<div id="modal_EraMedvedey" class="dlg-modal">
+    <span class="closer" data-close=""></span>
+    <h4>Аннотация</h4>
+    Еще вчера Илья был легендой киберспорта, а сегодня он никому не нужный неудачник. Но однажды его жизнь круто меняется: Илья узнает, что его дочь Варя тоже стала киберспортсменкой. Однако, Варя не только талантлива, но и крайне цинична, а значит она может повторить его судьбу. Чтобы стать для дочери примером, Илья решает вернуться в киберспорт и сделать невозможное – выиграть чемпионат мира. Токсичная среда, разрушенная репутация и возраст встают на пути к его цели. Но самое главное – Варя презирает отца и всеми силами пытается похоронить его устремления.
+    <br><br>
+    Роман открывает изнанку киберспорта, в котором нередко восемнадцатилетние игроки становятся долларовыми миллионерами, но вместе с тем там царит безграничный
+    цинизм и рушатся судьбы многих молодых людей.
+</div>
+
+<!--Небесный шкипер-->
+<div class="overlay" data-close=""></div>
+<div id="modal_SkySkiper" class="dlg-modal">
+    <span class="closer" data-close=""></span>
+    <h4>Аннотация</h4>
+    Удача сопутствует сильным. И бывший меллингский беспризорник Рик, а ныне шкипер собственной воздушной яхты «Мурена» Рихард Бюлов всей своей жизнью подтверждает эту старую истину. Нет в небесах такой пиратской «акулы», что могла бы поймать верткую и зубастую «Мурену», как нет на земле людей, что могли бы принудить ее шкипера к службе. Силой ли, хитростью — Рихард всегда найдет адекватный ответ. И горе тому, кто решит сделать юного небесного волка своим врагом. Пираты, уничтожившие его родной Меллинг, тому свидетели.
+</div>
+
+<!-- Девочка по имени Сова-->
+<div class="overlay" data-close=""></div>
+<div id="modal_DevochkaSova" class="dlg-modal">
+    <span class="closer" data-close=""></span>
+    <h4>Аннотация</h4>
+    Девочка с необычным именем Сова очень хочет узнать, кто её отец. Но сделать это не так-то просто – вместо ответов мама постоянно рассказывает ей какие-то сказки про вечную зиму... А тут ещё лучшая подруга впадает в депрессию из-за семейных проблем, и в классе появляется новый мальчик, который не даёт Сове проходу…
+    Однажды Сова замечает странные ледяные узоры на своей коже, а её слёзы почему-то начинают превращаться в ледышки. И тогда она во что бы то ни стало решает разгадать тайну своего происхождения…
+</div>
+
+<!--Тайник в доме художника-->
+<div class="overlay" data-close=""></div>
+<div id="modal_TainikVDomeHudozhnika" class="dlg-modal">
+    <span class="closer" data-close=""></span>
+    <h4>Аннотация</h4>
+    Семья Крымовых приезжает на лето к бабушке. Её дом с башенками и Комнатой-без-углов - не просто дача, а без пяти минут филиал Третьяковки: раньше он принадлежал художнику Мухину, бабушкиному учителю. Пятеро ребят и верный пёс Джетро, кажется, уже изучили дом вдоль и поперёк, но он продолжает хранить секреты. Однажды в дачном посёлке появляется сразу несколько загадочных незнакомцев, а собрание картин бесследно исчезает...
+    <br>
+    Тамара Михеева - автор более двадцати книг, финалист премии имени В. П.Крапивина, лауреат Национальной премии "Заветная мечта" и литературной премии имени С. В. Михалкова. Её повести давно полюбили читатели всех возрастов. Писательнице хватает всего нескольких мастерски подобранных фраз, чтобы создать живой, почти осязаемый образ. Обострённые до предела чувства, желание жить здесь и сейчас, внимание к окружающему миру во всём его многообразии - вот что движет подростками, о которых она пишет.
+    <br>
+    Для детей младшего и среднего школьного возраста.
+</div>
+
+<!--Я уйду с рассветом-->
+<div class="overlay" data-close=""></div>
+<div id="modal_IUiduSRassvetom" class="dlg-modal">
+    <span class="closer" data-close=""></span>
+    <h4>Аннотация</h4>
+    Август 1944 года. Валлиец Риз Гравенор меряет шагами улицы только что освобожденного от фашистских оккупантов Парижа, но на сердце у бывшего солдата, ветерана Первой мировой, тяжело… В начале войны он обвинил единственного сына Оуэна в трусости и нежелании воевать.
+    <br>
+    И тот ушел - туда, где гибли люди. Оуэн не хотел убивать, наоборот, мечтал спасать обреченных на смерть. А затем связь с ним оборвалась... Пытаясь выйти на след пропавшего сына, Риз знакомится с молодой француженкой по имени Шарлотта - девушка лихо управляет санитарным грузовичком, метко стреляет, а еще явно что-то скрывает. Отныне они вместе, и их путь лежит через Францию в заснеженные Альпы. Туда, где темные ночи сменяются великолепными рассветами, но еще звучат выстрелы, и каждый новый день может стать последним.
+</div>
+
+<!--Министерство справедливости-->
+<div class="overlay" data-close=""></div>
+<div id="modal_MinisterstvoSpravedlivosti" class="dlg-modal">
+    <span class="closer" data-close=""></span>
+    <h4>Аннотация</h4>
+    Когда ржавые скрепы рассыпались и подлый мир канул в небытие, его вчерашние хозяева и их верные слуги шустро расползлись по всему глобусу и забились в глубокие щели. Они сменили имена, паспорта, номера банковских счетов и понадеялись на юридические увертки, а еще больше - на короткую память обывателей и великодушие победителей. Как будто они оказались правы: шли месяцы, а родина официально не преследовала сбежавших ворюг и кровопийц… Но значило ли это, что о них забыли совсем?
+</div>
+
+<!--Реальность времени-->
+<div class="overlay" data-close=""></div>
+<div id="modal_RealnostVremeni" class="dlg-modal">
+    <span class="closer" data-close=""></span>
+    <h4>Аннотация</h4>
+    "Живи настоящим" - легко сказать, гораздо сложнее сделать. И причина не столько в психологии, сколько в самой природе времени и человека. Задумайтесь: прямо сейчас, когда вы читаете эти слова, вы уже в прошлом.
+    Понять ход времени: почему оно то ускоряется, то замедляется, куда уходит прошлое и откуда берется будущее - об этом испокон веков мечтали поэты и философы. Но вряд ли они справились бы без помощи ученых.
+    <br>
+    Жан-Клод Амейзен рассказывает о людях, умеющих путешествовать во времени: о палеонтологах, способных заглянуть на многие миллионы лет назад, чтобы прогуляться по субтропическим лесам Антарктиды; о нейрофизиологах, пытающихся "остановить" мгновение; об астрономах, стремящихся предсказать далекое будущее Вселенной.
+</div>
+
+<!--Реальность времени-->
+<div class="overlay" data-close=""></div>
+<div id="modal_IgraNaNervah" class="dlg-modal">
+    <span class="closer" data-close=""></span>
+    <h4>Аннотация</h4>
+    Мы переживаем эмоции ежеминутно - радуемся, печалимся, ликуем, ненавидим, отчаиваемся, любим… Именно эмоции определяют наше поведение, отношение к происходящему и к людям, нас окружающим. Они помогают нам адаптироваться к внешнему миру. Но они же могут стать проблемой и причиной трагедии.
+    <br>
+    Способны ли мы подчинять эмоции своей воле? Возможно ли это в принципе? И нужно ли это? Реально ли вообще отказаться от эмоций и руководствоваться исключительно собственным разумом? Давайте попробуем в этом разобраться.
+</div>
+
+<!--Подсознание может всё-->
+<div class="overlay" data-close=""></div>
+<div id="modal_Podsoznanie" class="dlg-modal">
+    <span class="closer" data-close=""></span>
+    <h4>Аннотация</h4>
+    Мы переживаем эмоции ежеминутно - радуемся, печалимся, ликуем, ненавидим, отчаиваемся, любим… Именно эмоции определяют наше поведение, отношение к происходящему и к людям, нас окружающим. Они помогают нам адаптироваться к внешнему миру. Но они же могут стать проблемой и причиной трагедии.
+    <br>
+    Способны ли мы подчинять эмоции своей воле? Возможно ли это в принципе? И нужно ли это? Реально ли вообще отказаться от эмоций и руководствоваться исключительно собственным разумом? Давайте попробуем в этом разобраться.
+</div>
+
+<!--Слушайте! Искусство общения-->
+<div class="overlay" data-close=""></div>
+<div id="modal_Slushayte" class="dlg-modal">
+    <span class="closer" data-close=""></span>
+    <h4>Аннотация</h4>
+    Почему порой так сложно понять друг друга в общении с коллегами, членами семьи или друзьями?
+    <br>
+    Умение по-настоящему слушать другого человека - это самый важный навык, способный помочь вам изменить свою жизнь, стать увереннее, доброжелательнее и достичь успеха. Именно поэтому так ценна книга, которую вы держите в руках.
+    <br>
+    Она поможет пройти путь от простого физиологического слышания к эффективному слушанию, включающему в себя еще и понимание. Это искусство, которому можно научиться. В конце концов, что есть искусство, как не постоянное совершенствование тех или иных навыков! Приводя яркие примеры и предлагая простые в освоении приемы общения и практические упражнения, авторы покажут вам, как стать идеальным собеседником.
+</div>
+
+<!--Модальное окно для кнопки "Купить"-->
+<div class="overlay" data-close=""></div>
+<div id="modal_buy" class="dlg-modal">
+    <form name = "contact_form" onsubmit="return validate_form ( );">
+        <div class="container">
+            <h1>Купить сейчас</h1>
+            <p>Заполните данные и через несколько минут вам перезвонит наш менеджер для подтверждения заказа.</p>
+            <hr>
+            <label><b>ФИО</b></label>
+            <input type="text"
+                   placeholder="Иванов Иван Иванович"
+                   pattern="[А-яа-я]+[ ][А-яа-я]+[ ][А-яа-я]+"
+                   title="Введите кириллицой имя фамилию отчество разделяя слова пробелами."
+                   required="">
+            <br>
+            <label style="text-align: center;"><b>Мобильный телефон</b></label>
+            <input type="tel"
+                   placeholder="+79104479731"
+                   pattern="[\+]?[0-9]{11}"
+                   required="">
+            <div class="clearfix">
+                <button type="reset"
+                        class="btn btn-dark"
+                        title = "Нажмите, чтобы очистить все поля"
+                        style="color:#feb386;">Cброс</button>
+                <button type = "submit" class="btn btn-dark"
+                        title = "Нажмите, чтобы подтвердить свои данные"
+                        style="color:#feb386;">Купить</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+
+<!--JavaScript-->
+
+<script>var typeAnimate = 'fade';</script>
+<script src="../js/popup-window-css3.function.js"></script>
 </body>
 </html>
