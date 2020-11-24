@@ -1,25 +1,462 @@
 <!DOCTYPE html>
-<!--https://habr.com/ru/company/edison/blog/343796/-->
-<html lang="en">
+
+<html lang="en ru" xmlns:data-create="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Bookshelf</title>
     <link href="../css/Head.css" rel="stylesheet" type="text/css">
     <link href="../css/Menu.css" rel="stylesheet"  type="text/css">
+    <link href = "../css/MainPage/Section.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css" >
+    <link href="../css/popup-window.css" rel="stylesheet">
+    <script type="text/javascript">
+        function validate_form ( )
+        {
+            alert("Спасибо за заказ! Мы скоро перезвоним вам")
+        }
+    </script>
 </head>
-<body>
+<body class = "lock">
 <header>
     <div class = "title">Bookshelf</div>
     <div class="underTitle">Интернет-магазин</div>
     <div>
         <ul class="menu-main">
-            <li><a href="MainPage.html" > Главное</a></li>
-            <li><a href="Stationery.html" class="current">Книги</a></li>
-            <li><a href="Classic.html">Для вас</a></li>
-            <li><a href="School.html">Личный кабинет</a></li>
-            <li><a href="Contacts.html">Контакты</a></li>
+            <li><a href="MainPage.html" style="text-decoration: none;"> Главное</a></li>
+            <li><a href="Classic.html"  style="text-decoration: none;">Классика</a></li>
+            <li><a href="Stationery.html" class="current" style="text-decoration: none;">Канцтовары</a></li>
+            <li><a href="School.html" style="text-decoration: none;">К школе</a></li>
+            <li><a href="All_Items.html" style="text-decoration: none;">Все товары</a></li>
+            <li><a href="Contacts.html" style="text-decoration: none;">О нас</a></li>
         </ul>
     </div>
 </header>
+<!-- Хорошие чернила - залог успеха! -->
+<div class="book-block">
+    <h2 class="block-title">Хорошие чернила - залог успеха!</h2>
+    <div class = "delimetr"></div>
+    <div class="container" style="padding-top: 40px;">
+
+        <!--Карточки-->
+
+        <div class="row">
+            <div class="col-md-6 col-xl-3">
+                <div class="card mx-auto mb-4 cardTransform" style="max-width: 300px; border: none">
+                    <!-- Изображение -->
+                    <img class="card-img-top imgSize" src="../img/Books/Stationery/PenPresto.jpg" alt="PenPresto.jpg">
+                    <!-- Текстовый контент -->
+                    <div class="card-body" style="padding: 0.7rem;">
+                        <h4 class="card-title" style="margin-bottom:.5rem">Ручка гелевая "Presto"</h4>
+                        <h5>Производитель:</h5>
+                        <h6>MAZARI</h6>
+                        <p class="card-text">Ручка гелевая со стираемыми чернилами.</p>
+                        <h6>Цена: 89 руб.</h6>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_PenPresto.jpg">Подробнее</button>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_buy">Купить</button>
+                    </div>
+                </div><!-- Конец карточки -->
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <div class="card mx-auto mb-4 cardTransform" style="max-width: 300px; border: none">
+                    <!-- Изображение -->
+                    <img class="card-img-top imgSize" src="../img/Books/Stationery/Pen2.jpg" alt="Pen2.jpg">
+                    <!-- Текстовый контент -->
+                    <div class="card-body" style="padding: 0.7rem;">
+                        <h4 class="card-title" style="margin-bottom:.5rem">Ручка шариковая "Slider Edge XB"</h4>
+                        <h5>Производитель:</h5>
+                        <h6>Schneider</h6>
+                        <p class="card-text">Ручка шариковая Schneider "Slider Edge XB" черная</p>
+                        <h6>Цена: 137 <strike>171</strike>руб</h6>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_Pen2.jpg">Подробнее</button>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_buy">Купить</button>
+                    </div>
+                </div><!-- Конец карточки -->
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <div class="card mx-auto mb-4 cardTransform" style="max-width: 300px; border: none">
+                    <!-- Изображение -->
+                    <img class="card-img-top imgSize" src="../img/Books/Stationery/PenMCGold.jpg" alt="PikovayaDama.png">
+                    <!-- Текстовый контент -->
+                    <div class="card-body" style="padding: 0.7rem;">
+                        <h4 class="card-title" style="margin-bottom:.5rem">Пиковая дама</h4>
+                        <h5>А.С. Пушкин</h5>
+                        <p class="card-text hiddenText">Тройка, семерка, туз… "Пиковая дама" - пожалуй, самое мистическое произведение Пушкина...</p>
+                        <h6>Цена: 678 руб.</h6>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_PikovayaDama">Подробнее</button>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_buy">Купить</button>
+                    </div>
+                </div><!-- Конец карточки -->
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <div class="card mx-auto mb-4 cardTransform" style="max-width: 300px; border: none">
+                    <!-- Изображение -->
+                    <img class="card-img-top imgSize" src="../img/Books/Stationery/PenInkGlide.jpg" alt="Dubrovskiy.png">
+                    <!-- Текстовый контент -->
+                    <div class="card-body" style="padding: 0.7rem;">
+                        <h4 class="card-title" style="margin-bottom:.5rem">Дубровский</h4>
+                        <h5>А.С. Пушкин</h5>
+                        <p class="card-text hiddenText">Повесть А. Пушкина "Дубровский" рассказывает о любви Владимира Дубровского и Марии Троекуровой — потомков двух враждующих помещичьих семейств</p>
+                        <h6>Цена: 226 руб.</h6>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_Dubrovskiy" >Подробнее</button>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_buy" >Купить</button>
+                    </div>
+                </div><!-- Конец карточки -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Сколько ума в стихотворениях Лермонтова!..-->
+<div class="book-block">
+    <h2 class="block-title">Сколько ума в стихотворениях Лермонтова!..</h2>
+    <div class = "delimetr"></div>
+    <div class="container" style="padding-top: 40px;">
+        <!--Карточки-->
+        <div class="row">
+            <div class="col-md-6 col-xl-3">
+                <div class="card mx-auto mb-4 cardTransform" style="max-width: 300px; border: none">
+                    <!-- Изображение -->
+                    <img class="card-img-top imgSize" src="../img/Books/Classic/GeroyNashegoVremeni.png" alt="GeroyNashegoVremeni">
+                    <!-- Текстовый контент -->
+                    <div class="card-body" style="padding: 0.7rem;"></h4>
+                        <h4 class="card-title" style="margin-bottom:.5rem">Герой нашего времени</h4>
+                        <h5>М.Ю. Лермонтов</h5>
+                        <p class="card-text hiddenText">Роман рассказывает о типичном молодом человеке, современнике Лермонтова: "Герой нашего времени точно портрет, но не одного человека: это портрет, составленный из пороков всего нашего поколения, в полном их развитии".</p>
+                        <h6>Цена: 229 руб.</h6>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_GeroyNashegoVremeni">Подробнее</button>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_buy">Купить</button>
+                    </div>
+                </div><!-- Конец карточки -->
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <div class="card mx-auto mb-4 cardTransform" style="max-width: 300px; border: none">
+                    <!-- Изображение -->
+                    <img class="card-img-top imgSize" src="../img/Books/Classic/Mciri.jpg" alt="Mciri.jpg">
+                    <!-- Текстовый контент -->
+                    <div class="card-body" style="padding: 0.7rem;">
+                        <h4 class="card-title" style="margin-bottom:.5rem">Мцыри. Поэмы и стихотворения</h4>
+                        <h5>М.Ю. Лермонтов</h5>
+                        <p class="card-text hiddenText">Михаил Юрьевич Лермонтов (1814-1841) - выдающийся русский поэт и прозаик. Родился в Москве, но все детство</p>
+                        <h6>Цена: 199 руб</h6>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_Mciri">Подробнее</button>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_buy">Купить</button>
+                    </div>
+                </div><!-- Конец карточки -->
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <div class="card mx-auto mb-4 cardTransform" style="max-width: 300px; border: none">
+                    <!-- Изображение -->
+                    <img class="card-img-top imgSize" src="../img/Books/Classic/KavkazskiyPlennik.jpg" alt="KavkazskiyPlennik.jpg">
+                    <!-- Текстовый контент -->
+                    <div class="card-body" style="padding: 0.7rem;">
+                        <h4 class="card-title" style="margin-bottom:.5rem">Кавказский<br>пленник</h4>
+                        <h5>М.Ю. Лермонтов</h5>
+                        <p class="card-text hiddenText">Михаил Юрьевич Лермонтов (1814-1841) - русский поэт XIX века, прозаик и драматург, классик художественной литературы, отличительными чертами которого стали</p>
+                        <h6>Цена: 347 руб.</h6>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_KavkazskiyPlennik">Подробнее</button>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_buy">Купить</button>
+                    </div>
+                </div><!-- Конец карточки -->
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <div class="card mx-auto mb-4 cardTransform" style="max-width: 300px; border: none">
+                    <!-- Изображение -->
+                    <img class="card-img-top imgSize" src="../img/Books/Classic/Borodino.jpg" alt="Borodino.jpg">
+                    <!-- Текстовый контент -->
+                    <div class="card-body" style="padding: 0.7rem;">
+                        <h4 class="card-title" style="margin-bottom:.5rem">Бородино. Сказка и стихи</h4>
+                        <h5>М.Ю. Лермонтов</h5>
+                        <p class="card-text hiddenText">Михаил Юрьевич Лермонтов (1814-1841) - русский поэт, прозаик, драматург, яркий представитель Золотого века</p>
+                        <h6>Цена: 103 руб.</h6>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_Borodino" >Подробнее</button>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_buy" >Купить</button>
+                    </div>
+                </div><!-- Конец карточки -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Словами великого классика - Л.Н.Толстого-->
+<div class="book-block">
+    <h2 class="block-title">Словами великого классика - Л.Н.Толстого</h2>
+    <div class = "delimetr"></div>
+    <div class="container" style="padding-top: 40px;">
+        <!--Карточки-->
+        <div class="row">
+            <div class="col-md-6 col-xl-3">
+                <div class="card mx-auto mb-4 cardTransform" style="max-width: 300px; border: none">
+                    <!-- Изображение -->
+                    <img class="card-img-top imgSize" src="../img/Books/Classic/VoinaIMir.jpg" alt="VoinaIMir.jpg">
+                    <!-- Текстовый контент -->
+                    <div class="card-body" style="padding: 0.7rem;">
+                        <h4 class="card-title" style="margin-bottom:.5rem">Война и мир. В 4-х томах.</h4>
+                        <h5>Л.Н. Толстой</h5>
+                        <p class="card-text hiddenText">Романом "Война и мир" Л. Н. Толстой создал грандиозное литературное полотно о России начала XIX века.</p>
+                        <h6>Цена: 4181 <strike>6968</strike> руб.</h6>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_VoinaIMir">Подробнее</button>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_buy">Купить</button>
+                    </div>
+                </div><!-- Конец карточки -->
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <div class="card mx-auto mb-4 cardTransform" style="max-width: 300px; border: none">
+                    <!-- Изображение -->
+                    <img class="card-img-top imgSize" src="../img/Books/Classic/Karenina.jpg" alt="Karenina.jpg">
+                    <!-- Текстовый контент -->
+                    <div class="card-body" style="padding: 0.7rem;">
+                        <h4 class="card-title" style="margin-bottom:.5rem">Анна<br>Каренина</h4>
+                        <h5>Л.Н. Толсотой</h5>
+                        <p class="card-text hiddenText">В романе «Анна Каренина» отразилась со всеми подробностями российская действительность 1870-х годов. </p>
+                        <h6>Цена: 1304 руб</h6>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_Karenina">Подробнее</button>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_buy">Купить</button>
+                    </div>
+                </div><!-- Конец карточки -->
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <div class="card mx-auto mb-4 cardTransform" style="max-width: 300px; border: none">
+                    <!-- Изображение -->
+                    <img class="card-img-top imgSize" src="../img/Books/Classic/Sevastopolskie.jpg"
+                         alt="Sevastopolskie.jpg">
+                    <!-- Текстовый контент -->
+                    <div class="card-body" style="padding: 0.7rem;">
+                        <h4 class="card-title" style="margin-bottom:.5rem">Севастопольские рассказы</h4>
+                        <h5>Л.Н. Толстой</h5>
+                        <p class="card-text hiddenText">Вскоре после начала Крымской войны молодой поручик Лев Толстой по личной просьбе был перевед...</p>
+                        <h6>Цена: 479 <strike>799</strike> руб.</h6>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_Sevastopolskie">Подробнее</button>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_buy">Купить</button>
+                    </div>
+                </div><!-- Конец карточки -->
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <div class="card mx-auto mb-4 cardTransform" style="max-width: 300px; border: none">
+                    <!-- Изображение -->
+                    <img class="card-img-top imgSize" src="../img/Books/Classic/Detstvo.jpg" alt="Detstvo.png">
+                    <!-- Текстовый контент -->
+                    <div class="card-body" style="padding: 0.7rem;">
+                        <h4 class="card-title" style="margin-bottom:.5rem">Детство. Отрочество. Юность</h4>
+                        <h5>Л.Н. Толстой</h5>
+                        <p class="card-text hiddenText">Знаменитая автобиографическая трилогия "Детство. Отрочество. Юность", основанная на реальных</p>
+                        <h6>Цена: 403 руб.</h6>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_Detstvo" >Подробнее</button>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_buy" >Купить</button>
+                    </div>
+                </div><!-- Конец карточки -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Кнопки с Аннотациями-->
+
+<!-- Ручка гелевая "Presto"-->
+<div class="overlay" data-close=""></div>
+<div id="modal_PenPresto.jpg" class="dlg-modal">
+    <span class="closer" data-close=""></span>
+    <h4>Описание</h4>
+    Ручка гелевая со стираемыми чернилами.
+    <br>
+    Цвет чернил: синий.
+    <br>
+    Толщина пишущего узла: 0,5 мм.
+    <br>
+    Масса: 6 г
+    <br>
+    Размеры: 150x10x10 мм
+
+</div>
+
+<!-- Ручка шариковая Schneider "Slider Edge XB" черная-->
+<div class="overlay" data-close=""></div>
+<div id="modal_Pen2.jpg" class="dlg-modal">
+    <span class="closer" data-close=""></span>
+    <h4>Описание</h4>
+    Ручка шариковая Schneider "Slider Edge XB"
+    <br>
+    Цвет чернил: черная.
+    <br>
+    Толщина пишущего узла:1,4мм.
+    <br>
+    Масса: 6 г
+    <br>
+    Размеры: 160x10x10 мм
+    <br>
+    Особенности: трехгранная.<br>
+    Cделано в Германии.
+</div>
+
+<!--Пиковая Дама-->
+<div class="overlay" data-close=""></div>
+<div id="modal_PikovayaDama" class="dlg-modal">
+    <span class="closer" data-close=""></span>
+    <h4>Аннотация</h4>
+    Тройка, семерка, туз… "Пиковая дама" - пожалуй, самое мистическое произведение Пушкина. Историю Германна, попытавшегося усмирить судьбу, издательство "Качели" подготовило в виде подарочного издания с иллюстрациями Екатерины Костиной, чей фантазийный стиль мгновенно переносит читателя в атмосферу загадочного Петербурга XIX века.
+    <br>
+    Для детей старшего школьного возраста.
+</div>
+
+<!--Дубровский-->
+<div class="overlay" data-close=""></div>
+<div id="modal_Dubrovskiy" class="dlg-modal">
+    <span class="closer" data-close=""></span>
+    <h4>Аннотация</h4>
+    Повесть А. Пушкина "Дубровский" рассказывает о любви Владимира Дубровского и Марии Троекуровой — потомков двух враждующих помещичьих семейств. Существуют разные мнения о повести: как о неудаче поэта, писавшего совсем в духе Вальтера Скотта и наоборот, как о достижении - именно с этой повести А. Пушкин завершил провинциальную и открыл мировую русскую прозу.
+</div>
+
+<!-- Герой нашего времени-->
+<div class="overlay" data-close=""></div>
+<div id="modal_GeroyNashegoVremeni" class="dlg-modal">
+    <span class="closer" data-close=""></span>
+    <h4>Аннотация</h4>
+    "Герой нашего времени" - первый психологический роман в русской литературе, вершина творчества М. Ю. Лермонтова как прозаика и одно из самых популярных произведений своего времени.
+    <br>
+    Роман рассказывает о типичном молодом человеке, современнике Лермонтова: "Герой нашего времени точно портрет, но не одного человека: это портрет, составленный из пороков всего нашего поколения, в полном их развитии". Проходят столетия, но талант великого мастера в том и заключается, что произведение его не просто живет в веках, а становится все более актуальным.
+    <br>
+    Сегодня роман "Герой нашего времени" - достояние русской классической литературы.
+    <br>
+    Для старшего школьного возраста.
+</div>
+
+<!--Мцыри-->
+<div class="overlay" data-close=""></div>
+<div id="modal_Mciri" class="dlg-modal">
+    <span class="closer" data-close=""></span>
+    <h4>Аннотация</h4>
+    Михаил Юрьевич Лермонтов (1814-1841) - выдающийся русский поэт и прозаик.
+    <br>
+    Родился в Москве, но все детство провел в усадьбе Тарханы (сейчас с. Лермонтово), под Пензой, Родители Миши мало жили вместе, мама скоро умерла, отец уехал в снос имение, оставив мальчика на попечение бабушки, урожденной Столыпиной. Лермонтов рос болезненным ребёнком, на домашнем обучении, и в школу, закрытый пансион для мальчиков из благородных семей, поступил сразу в 4-й класс. Окончив ее, Миша владел четырьмя языками, играл на гитаре, скрипке, виолончели и фортепиано, хорошо рисовал.
+    <br>
+    Там же, в школе, возникли первые стихи и первые страдания. Душевные драмы, неразделённая любовь и холодное презрение к обществу, которые переживал сам поэт, стали лейтмотивом его творчества. Уже в это время он задумывает "Демона", в основе которого острое сознание вселенского одиночества. Появляется замысел и другой поэмы - "Мцыри", скрытый в юношеской заметке Лермонтова: "написать записки молодого монаха. 17лет. С детства он в монастыре, кроме священных книг не читал... Страстная душа томится. Идеалы". Над "Демоном" он работал 10 лет, но при жизни так и не увидел публикацию из-за цензурных запретов.
+    <br>
+    Талант Лермонтова зрел быстро, духовный мир рос, чему способствовала и учеба в Московском университете на словесном отделении, во время которой Лермонтов погрузился в городскую светскую жизнь: салоны, балы, маскарады. Но проучившись два года, Лермонтов пишет вдруг прошение об отчислении из числа студентов и поступает в Школу гвардейских подпрапорщиков и кавалерийских юнкеров, далёкое от литературы заведение. Оттуда он вышел корнетом Лейб-гвардии.
+    <br>
+    Читающая публика впервые открыла его как поэта в стихотворении на смерть Пушкина.
+</div>
+
+<!--Кавказский пленник-->
+<div class="overlay" data-close=""></div>
+<div id="modal_KavkazskiyPlennik" class="dlg-modal">
+    <span class="closer" data-close=""></span>
+    <h4>Аннотация</h4>
+    Михаил Юрьевич Лермонтов (1814-1841) - русский поэт XIX века, прозаик и драматург, классик художественной литературы, отличительными чертами которого стали нравственный максимализм и бескомпромиссность. "Кавказский пленник" - сборник ранних поэм автора, в числе которых: "Черкесы", "Кавказский пленник", "Корсар", "Два брата", "Преступник", "Две невольницы", "Исповедь", "Ангел смерти" и многие другие. Лирический мир, полный подвигов и приключений, исканий и скитаний, свободы и независимости, надолго запомнится читателю и позволит услышать несмолкаемый Голос Вечности!
+</div>
+
+<!--Бородино-->
+<div class="overlay" data-close=""></div>
+<div id="modal_Borodino" class="dlg-modal">
+    <span class="closer" data-close=""></span>
+    <h4>Аннотация</h4>
+    Михаил Юрьевич Лермонтов (1814-1841) - русский поэт, прозаик, драматург, яркий представитель Золотого века русской литературы. Родился в Москве в семье офицера. Его мать, Мария Михайловна, умерла, когда мальчику не было и 3 лет. Воспитанием будущего поэта занималась его бабушка по материнской линии Елизавета Алексеевна Арсеньева, детство мальчик провёл в её имении Тарханы (Пензенская губерния).
+    <br>
+    Первоначально будущий поэт получал домашнее образование. В 1828-1830 гг. он учился в пансионе при Московском университете, тогда же были написаны его первые стихотворения. В 1830-1832 гг. М.Ю. Лермонтов учился в Московском университете, однако, не окончив курс, подал прошение об отчислении. В 1832 году поступил в Школу гвардейских подпрапорщиков и кавалерийских юнкеров, по окончании которой он был назначен в гусарский полк.
+    <br>
+    В те годы поэтический талант М.Ю. Лермонтова не был известен широкой публике - свои произведения он представлял лишь в офицерских и светских кружках. Первая публикация прошла без ведома М.Ю. Лермонтова - в 1835 году рукопись поэмы "Хаджи Абрек" втайне от автора передал в журнал "Библиотека для чтения" его дальний родственник Н.Д. Юрьев. Несмотря на успешный дебют, М.Ю. Лермонтов не хотел публиковать свои стихотворения.
+    <br>
+    Настоящую известность М.Ю. Лермонтову принесло стихотворение "Смерть Поэта" (1837) - отклик на последнюю дуэль А.С. Пушкина. И хотя это стихотворение не было опубликовано, а распространялось "в списках", оно всё же вызвало крайнее неудовольствие императора, за что поэт и был выслан на Кавказ в действующую армию. Здесь М.Ю. Лермонтов написал множество поэтических произведений, кроме того, он начал заниматься живописью.
+</div>
+
+<!--Война и мир-->
+<div class="overlay" data-close=""></div>
+<div id="modal_VoinaIMir" class="dlg-modal">
+    <span class="closer" data-close=""></span>
+    <h4>Аннотация</h4>
+    Романом "Война и мир" Л. Н. Толстой создал грандиозное литературное полотно о России начала XIX века. Подробная хроника жизни нескольких дворянских семей, масштабные батальные сцены, точный портрет общества с его идеологией, философией, приметами быта - во всех составляющих романа исследователи признают "высшую художественную объективность" автора. Писатель исследовал русский характер на примере нескольких сотен персонажей. Часть из них - исторические лица, часть - созданы на основе прототипов, в том числе членов семьи самого Толстого. Писатель использовал невероятное количество исторических источников, архивных материалов, семейных преданий, мемуаров, из которых была собрана целая библиотека.
+    <br>
+    С настоящим изданием к читателю возвращаются классические иллюстрации Дементия Алексеевича Шмаринова, входящие в золотой фонд отечественной книжной графики. Невероятно живые, выполненные будто с натуры, они находятся в удивительной гармонии с текстом одного из центральных произведений мировой литературы.
+</div>
+
+<!--Анна Каренина-->
+<div class="overlay" data-close=""></div>
+<div id="modal_Karenina" class="dlg-modal">
+    <span class="closer" data-close=""></span>
+    <h4>Аннотация</h4>
+    В романе «Анна Каренина» отразилась со всеми подробностями российская действительность 1870-х годов. Текст вобрал в себя не только приметы времени и характеры персонажей, созданные Л. Н. Толстым на основе многих и многих прототипов, - писатель внес в роман очень много автобиографического, пережитого им самим. Работая над романом, Толстой не вел дневников. «Я все написал в „Анне Карениной“, - говорил он, - и ничего не осталось». Издание украшают иллюстрации Александра Самохвалова, каждая из которых - живописное полотно, точное, убедительное, с первых страниц переносящее читателя в пространство романа.
+</div>
+
+<!--Севастольские рассказы-->
+<div class="overlay" data-close=""></div>
+<div id="modal_Sevastopolskie" class="dlg-modal">
+    <span class="closer" data-close=""></span>
+    <h4>Аннотация</h4>
+    Вскоре после начала Крымской войны молодой поручик Лев Толстой по личной просьбе был переведен в Севастополь. Будущий писатель сражался на знаменитом 4-м бастионе и писал заметки о баталиях, армейском быте, военном госпитале. Позже они сложились в художественные очерки "Севастополь в декабре месяце", "Севастополь в мае", "Севастополь в августе 1855 года", которые отличаются, пожалуй, лучшим описанием батальных сцен в русской литературе.
+    <br>
+    Повествование сопровождают достоверные иллюстрации Анатолия Кокорина, который сам был участником войны - Великой Отечественной. Рассказы писателя и рисунки художника предстают перед читателем как репортаж с места событий.
+</div>
+
+<!--Детство-->
+<div class="overlay" data-close=""></div>
+<div id="modal_Detstvo" class="dlg-modal">
+    <span class="closer" data-close=""></span>
+    <h4>Аннотация</h4>
+    Вскоре после начала Крымской войны молодой поручик Лев Толстой по личной просьбе был переведен в Севастополь. Будущий писатель сражался на знаменитом 4-м бастионе и писал заметки о баталиях, армейском быте, военном госпитале. Позже они сложились в художественные очерки "Севастополь в декабре месяце", "Севастополь в мае", "Севастополь в августе 1855 года", которые отличаются, пожалуй, лучшим описанием батальных сцен в русской литературе.
+    <br>
+    Повествование сопровождают достоверные иллюстрации Анатолия Кокорина, который сам был участником войны - Великой Отечественной. Рассказы писателя и рисунки художника предстают перед читателем как репортаж с места событий.
+</div>
+
+<!--Модальное окно для кнопки "Купить"-->
+<div class="overlay" data-close=""></div>
+<div id="modal_buy" class="dlg-modal">
+    <form name = "contact_form" onsubmit="return validate_form ( );">
+        <div class="container">
+            <h1>Купить сейчас</h1>
+            <p>Заполните данные и через несколько минут вам перезвонит наш менеджер для подтверждения заказа.</p>
+            <hr>
+            <label><b>ФИО</b></label>
+            <input type="text"
+                   placeholder="Иванов Иван Иванович"
+                   pattern="[А-яа-я]+[ ][А-яа-я]+[ ][А-яа-я]+"
+                   title="Введите кириллицой имя фамилию отчество разделяя слова пробелами."
+                   required="">
+            <br>
+            <label style="text-align: center;"><b>Мобильный телефон</b></label>
+            <input type="tel"
+                   placeholder="+79104479731"
+                   pattern="[\+]?[0-9]{11}"
+                   required="">
+            <div class="clearfix">
+                <button type="reset"
+                        class="btn btn-dark"
+                        title = "Нажмите, чтобы очистить все поля"
+                        style="color:#feb386;">Cброс</button>
+                <button type = "submit" class="btn btn-dark"
+                        title = "Нажмите, чтобы подтвердить свои данные"
+                        style="color:#feb386;">Купить</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+
+<!--JavaScript-->
+
+<script>var typeAnimate = 'fade';</script>
+<script src="../js/popup-window-css3.function.js"></script>
 </body>
 </html>
