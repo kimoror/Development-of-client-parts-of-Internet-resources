@@ -22,7 +22,6 @@
     <list default="true" id="c75f334b-2e30-46f7-9a12-ead7b575946e" name="Default Changelist" comment="Add atribute alt to img. Add book IgraNaNervah. Change example phone number to unreal&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doc/Classic.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/Classic.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/MainPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/MainPage.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,6 +109,7 @@
       <workItem from="1606068805655" duration="1257000" />
       <workItem from="1606070106624" duration="6801000" />
       <workItem from="1606140007104" duration="12167000" />
+      <workItem from="1606195653152" duration="1709000" />
     </task>
     <task id="LOCAL-00001" summary="Add third window. Now, when I clicl on button three popup window opened">
       <created>1605852929213</created>
