@@ -21,9 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c75f334b-2e30-46f7-9a12-ead7b575946e" name="Default Changelist" comment="Add atribute alt to img. Add book IgraNaNervah. Change example phone number to unreal&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Classic.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/Classic.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/MainPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/MainPage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doc/Stationery.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/Stationery.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Books/Stationery/Cherhenie2.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +112,7 @@
       <workItem from="1606070106624" duration="6801000" />
       <workItem from="1606140007104" duration="12167000" />
       <workItem from="1606195653152" duration="6514000" />
-      <workItem from="1606219501505" duration="4013000" />
+      <workItem from="1606219501505" duration="6907000" />
     </task>
     <task id="LOCAL-00001" summary="Add third window. Now, when I clicl on button three popup window opened">
       <created>1605852929213</created>
@@ -220,7 +219,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606221606059</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="add favicon">
+      <created>1606225195444</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1606225195444</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -253,7 +259,8 @@
     <MESSAGE value="Add one pen" />
     <MESSAGE value="Add three pen" />
     <MESSAGE value="add cherchnie1. Change text-align in popup-window.css" />
-    <option name="LAST_COMMIT_MESSAGE" value="add cherchnie1. Change text-align in popup-window.css" />
+    <MESSAGE value="add favicon" />
+    <option name="LAST_COMMIT_MESSAGE" value="add favicon" />
   </component>
   <component name="WindowStateProjectService">
     <state x="0" y="195" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604941304951">
