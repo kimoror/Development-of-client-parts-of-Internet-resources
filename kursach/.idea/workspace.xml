@@ -110,7 +110,7 @@
       <workItem from="1606068805655" duration="1257000" />
       <workItem from="1606070106624" duration="6801000" />
       <workItem from="1606140007104" duration="12167000" />
-      <workItem from="1606195653152" duration="4077000" />
+      <workItem from="1606195653152" duration="4884000" />
     </task>
     <task id="LOCAL-00001" summary="Add third window. Now, when I clicl on button three popup window opened">
       <created>1605852929213</created>
@@ -182,7 +182,21 @@
       <option name="project" value="LOCAL" />
       <updated>1606197632029</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Add template to Stationery.html. Add two pens">
+      <created>1606199912708</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1606199912709</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Add template to Stationery.html. Add two pens">
+      <created>1606199991843</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1606199991843</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,7 +225,8 @@
     <MESSAGE value="Add template to Classic.html. Add book &quot;Evgeniy Onegin&quot;" />
     <MESSAGE value="Add any books to Tolstoy" />
     <MESSAGE value="Change Name of Author of Pushkin" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change Name of Author of Pushkin" />
+    <MESSAGE value="Add template to Stationery.html. Add two pens" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add template to Stationery.html. Add two pens" />
   </component>
   <component name="WindowStateProjectService">
     <state x="0" y="195" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604941304951">
