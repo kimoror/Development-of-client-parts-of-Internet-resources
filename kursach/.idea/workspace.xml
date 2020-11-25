@@ -21,8 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c75f334b-2e30-46f7-9a12-ead7b575946e" name="Default Changelist" comment="Add atribute alt to img. Add book IgraNaNervah. Change example phone number to unreal&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Classic.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/Classic.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doc/MainPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/MainPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/School.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/School.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doc/Stationery.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/Stationery.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -113,7 +113,9 @@
       <workItem from="1606070106624" duration="6801000" />
       <workItem from="1606140007104" duration="12167000" />
       <workItem from="1606195653152" duration="6514000" />
-      <workItem from="1606219501505" duration="11534000" />
+      <workItem from="1606219501505" duration="11627000" />
+      <workItem from="1606238434246" duration="626000" />
+      <workItem from="1606318919284" duration="9318000" />
     </task>
     <task id="LOCAL-00001" summary="Add third window. Now, when I clicl on button three popup window opened">
       <created>1605852929213</created>
@@ -234,7 +236,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606229703150</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Staionery.html isready. And bug fixes">
+      <created>1606234435240</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1606234435240</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -269,7 +278,8 @@
     <MESSAGE value="add cherchnie1. Change text-align in popup-window.css" />
     <MESSAGE value="add favicon" />
     <MESSAGE value="Cherchenie is ready!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cherchenie is ready!" />
+    <MESSAGE value="Staionery.html isready. And bug fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Staionery.html isready. And bug fixes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="0" y="195" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604941304951">
@@ -367,11 +377,11 @@
     </state>
     <state width="499" height="398" key="SwitcherDM/0.0.1536.834/0.1080.1097.617@0.0.1536.834" timestamp="1606070810633" />
     <state width="623" height="498" key="SwitcherDM/0.20.1920.1060@0.20.1920.1060" timestamp="1604611214119" />
-    <state x="365" y="157" key="Vcs.Push.Dialog.v2" timestamp="1606229703707">
+    <state x="365" y="157" key="Vcs.Push.Dialog.v2" timestamp="1606234440632">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="365" y="157" key="Vcs.Push.Dialog.v2/0.0.1536.834/0.1080.1097.617@0.0.1536.834" timestamp="1606076896323" />
-    <state x="365" y="157" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1606229703707" />
+    <state x="365" y="157" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1606234440632" />
     <state x="456" y="220" key="Vcs.Push.Dialog.v2/0.20.1920.1060@0.20.1920.1060" timestamp="1605857803243" />
     <state x="429" y="179" key="run.anything.popup" timestamp="1606199587386">
       <screen x="0" y="0" width="1536" height="834" />

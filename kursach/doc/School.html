@@ -1,25 +1,491 @@
 <!DOCTYPE html>
-<!--https://habr.com/ru/company/edison/blog/343796/-->
-<html lang="en">
+
+<html lang="en ru" xmlns:data-create="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Bookshelf</title>
+    <link rel="icon" href="../img/FavIcon.png" type="image/x-icon">
     <link href="../css/Head.css" rel="stylesheet" type="text/css">
     <link href="../css/Menu.css" rel="stylesheet"  type="text/css">
+    <link href = "../css/MainPage/Section.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css" >
+    <link href="../css/popup-window.css" rel="stylesheet">
+    <script type="text/javascript">
+        function validate_form ( )
+        {
+            alert("Спасибо за заказ! Мы скоро перезвоним вам")
+        }
+    </script>
 </head>
-<body>
+<body class = "lock">
 <header>
     <div class = "title">Bookshelf</div>
     <div class="underTitle">Интернет-магазин</div>
     <div>
         <ul class="menu-main">
-            <li><a href="MainPage.html" > Главное</a></li>
-            <li><a href="Stationery.html">Книги</a></li>
-            <li><a href="Classic.html">Для вас</a></li>
-            <li><a href="School.html" class="current">Личный кабинет</a></li>
-            <li><a href="Contacts.html">Контакты</a></li>
+            <li><a href="MainPage.html" style="text-decoration: none;"> Главное</a></li>
+            <li><a href="Classic.html" style="text-decoration: none;">Классика</a></li>
+            <li><a href="Stationery.html" style="text-decoration: none;">Канцтовары</a></li>
+            <li><a href="School.html"  class="current" style="text-decoration: none;">К школе</a></li>
+            <li><a href="All_Items.html" style="text-decoration: none;">Все товары</a></li>
+            <li><a href="Contacts.html" style="text-decoration: none;">О нас</a></li>
         </ul>
     </div>
 </header>
+<!-- Для успешной сдачи экзаменов-->
+<div class="book-block">
+    <h2 class="block-title">Для успешной сдачи экзаменов</h2>
+    <div class = "delimetr"></div>
+    <div class="container" style="padding-top: 40px;">
+
+        <!--Карточки-->
+
+        <div class="row">
+            <div class="col-md-6 col-xl-3">
+                <div class="card mx-auto mb-4 cardTransform" style="max-width: 300px; border: none">
+                    <!-- Изображение -->
+                    <img class="card-img-top imgSize" src="../img/Books/School/EgeRus.jpg" alt="EgeRus.jpg">
+                    <!-- Текстовый контент -->
+                    <div class="card-body" style="padding: 0.7rem;">
+                        <h4 class="card-title" style="margin-bottom:.5rem">ЕГЭ 2021 Русский<br>язык.</h4>
+                        <h5>Цыбулько, Васильевых, Иванов</h5>
+                        <p class="card-text">Типовые экзаменационные варианты. 36 вариантов</p>
+                        <h6>Цена: 576 руб.</h6>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_EgeRus">Подробнее</button>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_buy">Купить</button>
+                    </div>
+                </div><!-- Конец карточки -->
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <div class="card mx-auto mb-4 cardTransform" style="max-width: 300px; border: none">
+                    <!-- Изображение -->
+                    <img class="card-img-top imgSize" src="../img/Books/School/EgeHistory.jpg" alt="EgeHistory.jpg">
+                    <!-- Текстовый контент -->
+                    <div class="card-body" style="padding: 0.7rem;">
+                        <h4 class="card-title" style="margin-bottom:.5rem">ЕГЭ 2021<br>История.</h4>
+                        <h5>Артасов, Крицкая, Мельникова</h5>
+                        <p class="card-text">Типовые экзаменационные варианты. 30 вариантов</p>
+                        <h6>Цена: 576 руб</h6>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_EgeHistory">Подробнее</button>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_buy">Купить</button>
+                    </div>
+                </div><!-- Конец карточки -->
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <div class="card mx-auto mb-4 cardTransform" style="max-width: 300px; border: none">
+                    <!-- Изображение -->
+                    <img class="card-img-top imgSize" src="../img/Books/School/EgePhysic.jpg" alt="EgePhysic.jpg">
+                    <!-- Текстовый контент -->
+                    <div class="card-body" style="padding: 0.7rem;">
+                        <h4 class="card-title" style="margin-bottom:.5rem">ЕГЭ 2021<br>Физика.</h4>
+                        <h5>Демидова, Грибов, Гиголо</h5>
+                        <p class="card-text">Типовые экзаменационные варианты. 30 вариантов</p>
+                        <h6>Цена: 576 руб.</h6>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_EgePhysic">Подробнее</button>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_buy">Купить</button>
+                    </div>
+                </div><!-- Конец карточки -->
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <div class="card mx-auto mb-4 cardTransform" style="max-width: 300px; border: none">
+                    <!-- Изображение -->
+                    <img class="card-img-top imgSize" src="../img/Books/School/EgeChemistry.jpg" alt="EgeChemistry.jpg">
+                    <!-- Текстовый контент -->
+                    <div class="card-body" style="padding: 0.7rem;">
+                        <h4 class="card-title" style="margin-bottom:.5rem">ЕГЭ 2021<br>Химия.</h4>
+                        <h5>Каверина, Снастина, Свириденкова:</h5>
+                        <p class="card-text">Типовые экзаменационные варианты. 30 вариантов</p>
+                        <h6>Цена: 576 руб.</h6>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_EgeChemistry" >Подробнее</button>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_buy" >Купить</button>
+                    </div>
+                </div><!-- Конец карточки -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Для самых маленьких-->
+<div class="book-block">
+    <h2 class="block-title">Для самых маленьких</h2>
+    <div class = "delimetr"></div>
+    <div class="container" style="padding-top: 40px;">
+        <!--Карточки-->
+        <div class="row">
+            <div class="col-md-6 col-xl-3">
+                <div class="card mx-auto mb-4 cardTransform" style="max-width: 300px; border: none">
+                    <!-- Изображение -->
+                    <img class="card-img-top imgSize" src="../img/Books/School/Azbuka.jpg" alt="Azbuka.jpg">
+                    <!-- Текстовый контент -->
+                    <div class="card-body" style="padding: 0.7rem;"></h4>
+                        <h4 class="card-title" style="margin-bottom:.5rem">Азбука. 1 класс. Учебник.</h4>
+                        <h5>Горецкий, Кирюшкин</h5>
+                        <p class="card-text hiddenText">Учебник "Азбука" входит в образовательную систему "Школа России". Содержание учебника направлено на формирование у</p>
+                        <h6>Цена: 1232 руб.</h6>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_Azbuka">Подробнее</button>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_buy">Купить</button>
+                    </div>
+                </div><!-- Конец карточки -->
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <div class="card mx-auto mb-4 cardTransform" style="max-width: 300px; border: none">
+                    <!-- Изображение -->
+                    <img class="card-img-top imgSize" src="../img/Books/School/OrfSlovar.jpg" alt="OrfSlovar.jpg">
+                    <!-- Текстовый контент -->
+                    <div class="card-body" style="padding: 0.7rem;">
+                        <h4 class="card-title" style="margin-bottom:.5rem">Орфографический<br>словарь</h4>
+                        <h5>Ушаков, Крючков</h5>
+                        <p class="card-text hiddenText">"Орфографический словарь" Д.Н.Ушакова и С.Е.Крючкова знают все учившиеся в школе. И это не случайно: словарем пользуются</p>
+                        <h6>Цена: 399 руб</h6>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_OrfSlovar">Подробнее</button>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_buy">Купить</button>
+                    </div>
+                </div><!-- Конец карточки -->
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <div class="card mx-auto mb-4 cardTransform" style="max-width: 300px; border: none">
+                    <!-- Изображение -->
+                    <img class="card-img-top imgSize" src="../img/Books/School/Russian1cl.jpg" alt="Russian1cl.jpg">
+                    <!-- Текстовый контент -->
+                    <div class="card-body" style="padding: 0.7rem;">
+                        <h4 class="card-title" style="margin-bottom:.5rem">Уроки русской<br>грамоты.</h4>
+                        <h5>Алдошина, Мишакина</h5>
+                        <p class="card-text hiddenText">Пособие "Уроки русской грамоты" предназначено для обучения
+                            чтению и развитию устной речи детей младшего школьного возраста.</p>
+                        <h6>Цена: 550 руб.</h6>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_Russian1cl">Подробнее</button>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_buy">Купить</button>
+                    </div>
+                </div><!-- Конец карточки -->
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <div class="card mx-auto mb-4 cardTransform" style="max-width: 300px; border: none">
+                    <!-- Изображение -->
+                    <img class="card-img-top imgSize" src="../img/Books/School/Math1cl.jpg" alt="Math1cl.jpg">
+                    <!-- Текстовый контент -->
+                    <div class="card-body" style="padding: 0.7rem;">
+                        <h4 class="card-title" style="margin-bottom:.5rem">Сказочная<br>математика</h4>
+                        <h5>Петерсон, Кочемасова</h5>
+                        <p class="card-text hiddenText">Пособие рассчитано на детей старшего дошкольного возраста и помогает в увлекательной форме.</p>
+                        <h6>Цена: 103 руб.</h6>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_Math1cl" >Подробнее</button>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_buy" >Купить</button>
+                    </div>
+                </div><!-- Конец карточки -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Do you speak English?-->
+<div class="book-block">
+    <h2 class="block-title">Do you speak English?</h2>
+    <div class = "delimetr"></div>
+    <div class="container" style="padding-top: 40px;">
+        <!--Карточки-->
+        <div class="row">
+            <div class="col-md-6 col-xl-3">
+                <div class="card mx-auto mb-4 cardTransform" style="max-width: 300px; border: none">
+                    <!-- Изображение -->
+                    <img class="card-img-top imgSize" src="../img/Books/School/English7cl.jpg" alt="English7cl.jpg">
+                    <!-- Текстовый контент -->
+                    <div class="card-body" style="padding: 0.7rem;">
+                        <h4 class="card-title" style="margin-bottom:.5rem">Английский язык.<br>7 класс.</h4>
+                        <h5>Ваулина, Дули</h5>
+                        <p class="card-text hiddenText">Рабочая тетрадь является составной частью учебно-методического комплекта серии "Английский в фокусе".</p>
+                        <h6>Цена: 574.</h6>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_English7cl">Подробнее</button>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_buy">Купить</button>
+                    </div>
+                </div><!-- Конец карточки -->
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <div class="card mx-auto mb-4 cardTransform" style="max-width: 300px; border: none">
+                    <!-- Изображение -->
+                    <img class="card-img-top imgSize" src="../img/Books/School/EnglishGolitsin.jpg" alt="EnglishGolitsin.jpg">
+                    <!-- Текстовый контент -->
+                    <div class="card-body" style="padding: 0.7rem;">
+                        <h4 class="card-title" style="margin-bottom:.5rem">Сборник<br>упражнений</h4>
+                        <h5>Юрий Голицынский</h5>
+                        <p class="card-text hiddenText">Сборник упражнений по всем разделам английской грамматики. Упражнения основаны на несложной лексике.</p>
+                        <h6>Цена: 993 руб</h6>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_EnglishGolitsin">Подробнее</button>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_buy">Купить</button>
+                    </div>
+                </div><!-- Конец карточки -->
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <div class="card mx-auto mb-4 cardTransform" style="max-width: 300px; border: none">
+                    <!-- Изображение -->
+                    <img class="card-img-top imgSize" src="../img/Books/School/EverydayEnglish.jpg"
+                         alt="EverydayEnglish.jpg">
+                    <!-- Текстовый контент -->
+                    <div class="card-body" style="padding: 0.7rem;">
+                        <h4 class="card-title" style="margin-bottom:.5rem">Everyday<br>English</h4>
+                        <h5>Дроздова, Берестова</h5>
+                        <p class="card-text hiddenText">Данная книга включает в себя учебник - справочник - словарь, тематические тексты.</p>
+                        <h6>Цена: 376 <strike>684</strike> руб.</h6>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_EverydayEnglish">Подробнее</button>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_buy">Купить</button>
+                    </div>
+                </div><!-- Конец карточки -->
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <div class="card mx-auto mb-4 cardTransform" style="max-width: 300px; border: none">
+                    <!-- Изображение -->
+                    <img class="card-img-top imgSize" src="../img/Books/School/RusEnglishTranslate.jpg"
+                         alt="RusEnglishTranslate.jpg">
+                    <!-- Текстовый контент -->
+                    <div class="card-body" style="padding: 0.7rem;">
+                        <h4 class="card-title" style="margin-bottom:.5rem">Русско-английский<br>словарь.</h4>
+                        <h5>Е.В. Дзюина</h5>
+                        <p class="card-text hiddenText">Словарик содержит около 6000 слов и словосочетаний, входящих в обязательный словарный минимум для учащихся.</p>
+                        <h6>Цена: 169 руб.</h6>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_EnglishTranslate" >Подробнее</button>
+                        <button type="button" class="btn btn-dark" style="color: #feb386"
+                                data-modal="modal_buy" >Купить</button>
+                    </div>
+                </div><!-- Конец карточки -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Кнопки с Аннотациями-->
+
+<!-- Егэ русский-->
+<div class="overlay" data-close=""></div>
+<div id="modal_EgeRus" class="dlg-modal">
+    <span class="closer" data-close=""></span>
+    <h4>Аннотация</h4>
+    Пособие прошло научно-методическую оценку ФГБНУ «ФИПИ».
+    Серия подготовлена разработчиками контрольных измерительных материалов (КИМ) единого государственного экзамена.<br>
+    В сборнике представлены:
+    - 36 типовых экзаменационных вариантов, составленных в соответствии с проектом демоверсии КИМ ЕГЭ по русскому языку 2021 года;<br>
+    - инструкция по выполнению экзаменационной работы;<br>
+    - ответы ко всем заданиям;<br>
+    - критерии оценивания.<br>
+    Выполнение заданий типовых экзаменационных вариантов предоставляет обучающимся возможность самостоятельно
+    подготовиться к государственной итоговой аттестации в форме ЕГЭ, а также объективно оценить уровень своей подготовки к экзамену.<br>
+    Учителя могут использовать типовые экзаменационные варианты для организации контроля результатов освоения
+    школьниками образовательных программ среднего общего образования и интенсивной подготовки обучающихся к ЕГЭ.<br>
+</div>
+
+<!-- Егэ история-->
+<div class="overlay" data-close=""></div>
+<div id="modal_EgeHistory" class="dlg-modal">
+    <span class="closer" data-close=""></span>
+    <h4>Аннотация</h4>
+    Пособие прошло научно-методическую оценку ФГБНУ «ФИПИ».<br>
+    Серия подготовлена разработчиками контрольных измерительных материалов (КИМ) единого государственного экзамена.<br>
+    В сборнике представлены:<br>
+    • 30 типовых экзаменационных вариантов, составленных в соответствии с проектом демоверсии КИМ ЕГЭ по физике 2021 года;<br>
+    • инструкция по выполнению экзаменационной работы;<br>
+    • ответы ко всем заданиям;<br>
+    • критерии оценивания.<br>
+    Выполнение заданий типовых экзаменационных вариантов предоставляет обучающимся возможность самостоятельно
+    подготовиться к государственной итоговой аттестации в форме ЕГЭ, а также объективно оценить уровень своей подготовки к экзамену.<br>
+    Учителя могут использовать типовые экзаменационные варианты для организации контроля результатов
+    освоения школьниками образовательных программ среднего общего образования и интенсивной подготовки обучающихся к ЕГЭ.
+</div>
+
+<!--Егэ Физика-->
+<div class="overlay" data-close=""></div>
+<div id="modal_EgePhysic" class="dlg-modal">
+    <span class="closer" data-close=""></span>
+    <h4>Аннотация</h4>
+    Пособие прошло научно-методическую оценку ФГБНУ «ФИПИ».<br>
+Серия подготовлена разработчиками контрольных измерительных материалов (КИМ) единого государственного экзамена.<br>
+В сборнике представлены:
+• 30 типовых экзаменационных вариантов, составленных в соответствии с проектом демоверсии КИМ ЕГЭ по физике 2021 года;<br>
+• инструкция по выполнению экзаменационной работы;<br>
+• ответы ко всем заданиям;<br>
+• критерии оценивания.<br>
+Выполнение заданий типовых экзаменационных вариантов предоставляет обучающимся возможность самостоятельно подготовиться к государственной итоговой аттестации в форме ЕГЭ, а также объективно оценить уровень своей подготовки к экзамену.<br>
+Учителя могут использовать типовые экзаменационные варианты для организации контроля результатов освоения школьниками образовательных программ среднего общего образования и интенсивной подготовки обучающихся к ЕГЭ
+</div>
+
+<!--Егэ химия-->
+<div class="overlay" data-close=""></div>
+<div id="modal_EgeChemistry" class="dlg-modal">
+    <span class="closer" data-close=""></span>
+    <h4>Аннотация</h4>
+    Пособие прошло научно-методическую оценку ФГБНУ «ФИПИ»<br>
+Серия подготовлена разработчиками контрольных измерительных материалов (КИМ) единого государственного экзамена.<br>
+В сборнике представлены:<br>
+• 30 типовых экзаменационных вариантов, составленных в соответствии с проектом демоверсии КИМ ЕГЭ по химии 2021 года;<br>
+• инструкция по выполнению экзаменационной работы;<br>
+• ответы ко всем заданиям;<br>
+• критерии оценивания.<br>
+Выполнение заданий типовых экзаменационных вариантов предоставляет обучающимся возможность самостоятельно подготовиться к государственной итоговой аттестации в форме ЕГЭ, а также объективно оценить уровень своей подготовки к экзамену.<br>
+Учителя могут использовать типовые экзаменационные варианты для организации контроля результатов освоения школьниками образовательных программ среднего общего образования и интенсивной подготовки обучающихся к ЕГЭ
+</div>
+
+<!-- Азбука-->
+<div class="overlay" data-close=""></div>
+<div id="modal_Azbuka" class="dlg-modal">
+    <span class="closer" data-close=""></span>
+    <h4>Аннотация</h4>
+    Учебник "Азбука" входит в образовательную систему "Школа России". Содержание учебника направлено на формирование у обучающихся устойчивых навыков осознанного чтения.<br>
+Разнообразные развивающие задания, игры с буквами и словами будут способствовать успешной адаптации обучающихся к учебной деятельности и грамотному освоению знаний в период обучения грамоте.<br>
+Материал учебника позволяет реализовать системно-деятельностный подход, организовать дифференцированное обучение и обеспечивает достижение личностных, предметных и метапредметных результатов освоения Основной образовательной программы начального общего образования.<br>
+Учебник соответствует требованиям Федерального государственного образовательного стандарта начального общего образования.<br>
+Рекомендовано Министерством просвещения Российской Федерации.<br>
+13-е издание.
+</div>
+
+<!--Орфографический словарь-->
+<div class="overlay" data-close=""></div>
+<div id="modal_OrfSlovar" class="dlg-modal">
+    <span class="closer" data-close=""></span>
+    <h4>Аннотация</h4>
+    "Орфографический словарь" Д.Н.Ушакова и С.Е.Крючкова знают все учившиеся в школе. И это не случайно: словарем
+    пользуются уже более 70 лет. Ибо он не устаревает, отражая активные изменения в русской лексике и то новое, что
+    принято правилами русской орфографии в данное время. Словарь включает около 15 000 слов.<br>
+    В 43-е издание были внесены соответствующие уточнения и дополнения.<br>
+    Словарем легко пользоваться, он дает справку не только о правописании, но и об ударении, что очень важно для
+    каждого говорящего по-русски.<br>
+    62-е издание, стереотипное.
+</div>
+
+<!--Уроки русской грамоты.-->
+<div class="overlay" data-close=""></div>
+<div id="modal_Russian1cl" class="dlg-modal">
+    <span class="closer" data-close=""></span>
+    <h4>Аннотация</h4>
+    Пособие "Уроки русской грамоты" предназначено для обучения чтению и развитию устной речи детей младшего школьного
+    возраста. Книга адресуется педагогам начальной школы, родителям и, конечно же, самим детям для обучения их грамоте.<br>
+    Предлагаемый материал может быть использован также для обучения детей старшего дошкольного возраста при подготовке
+    их к школе.
+</div>
+
+<!--Сказочная математика-->
+<div class="overlay" data-close=""></div>
+<div id="modal_Math1cl" class="dlg-modal">
+    <span class="closer" data-close=""></span>
+    <h4>Аннотация</h4>
+    Пособие рассчитано на детей старшего дошкольного возраста и помогает в увлекательной форме, через
+    любимые сказки знакомиться с математикой.<br>
+    Данная тетрадь удачно дополняет курс математики для дошкольников "Игралочка - ступенька к школе" (авторы Л.Г.
+    Петерсон, Е.Е. Кочемасова) для детей 5-7 лет и позволяет системно тренировать у детей умения применять обобщённые
+    способы решения различного рода математических задач. Интересные, нестандартные задания помогают сформировать у
+    детей интерес к математике; развивают абстрактное мышление, умение анализировать, сравнивать, обобщать, делать выводы.<br>
+    Рекомендуется широкому кругу специалистов (воспитателям детских садов, педагогам дополнительного образования,
+    гувернёрам), а также родителям. Тетради могут быть использованы в индивидуальной и групповой работе с детьми как в
+    образовательных организациях, так и в условиях домашнего обучения.<br>
+    3-е издание, стереотипное.
+</div>
+
+<!-- Английский язык. 7 класс. Английский в фокусе.-->
+<div class="overlay" data-close=""></div>
+<div id="modal_English7cl" class="dlg-modal">
+    <span class="closer" data-close=""></span>
+    <h4>Аннотация</h4>
+    Романом "Война и мир" Л. Н. Толстой создал грандиозное литературное полотно о России начала XIX века. Подробная хроника жизни нескольких дворянских семей, масштабные батальные сцены, точный портрет общества с его идеологией, философией, приметами быта - во всех составляющих романа исследователи признают "высшую художественную объективность" автора. Писатель исследовал русский характер на примере нескольких сотен персонажей. Часть из них - исторические лица, часть - созданы на основе прототипов, в том числе членов семьи самого Толстого. Писатель использовал невероятное количество исторических источников, архивных материалов, семейных преданий, мемуаров, из которых была собрана целая библиотека.
+    <br>
+    С настоящим изданием к читателю возвращаются классические иллюстрации Дементия Алексеевича Шмаринова, входящие в золотой фонд отечественной книжной графики. Невероятно живые, выполненные будто с натуры, они находятся в удивительной гармонии с текстом одного из центральных произведений мировой литературы.
+</div>
+
+<!--Юрий Голицынский: Грамматика. Сборник упражнений-->
+<div class="overlay" data-close=""></div>
+<div id="modal_EnglishGolitsin" class="dlg-modal">
+    <span class="closer" data-close=""></span>
+    <h4>Аннотация</h4>
+    Сборник упражнений по всем разделам английской грамматики. Упражнения основаны на несложной лексике.
+    Они содержат достаточно материала для запоминания основных грамматических форм и выработки навыков их применения.
+    Дополнен теоретическим материалом и словарем.<br>
+    Предназначен для учащихся 5-9 классов базовых школ и школ с углубленным изучением английского языка.<br>
+    8-е издание, исправленное.
+</div>
+
+<!--Дроздова, Берестова, Дунаевская: Everyday English. Учебное пособие-->
+<div class="overlay" data-close=""></div>
+<div id="modal_EverydayEnglish" class="dlg-modal">
+    <span class="closer" data-close=""></span>
+    <h4>Аннотация</h4>
+    Данная книга включает в себя учебник - справочник - словарь, тематические тексты из оригинальной художественной
+    литературы, более 200 диалогов на английском и русском языках, обилие разнообразных лексических упражнений и темы
+    для дискуссий и сочинений, обширный материал для дополнительного чтения, англо-русский словарь,
+    основанный на лексике издания.<br>
+    Учебное пособие предназначено для студентов гуманитарных вузов и старшеклассников школ и гимназий с
+    углубленным изучением английского языка.<br>
+    7-е издание.
+</div>
+
+<!--Англо-русский, русско-английский словарь. ФГОС-->
+<div class="overlay" data-close=""></div>
+<div id="modal_EnglishTranslate" class="dlg-modal">
+    <span class="closer" data-close=""></span>
+    <h4>Аннотация</h4>
+    Словарик содержит около 6000 слов и словосочетаний, входящих в обязательный словарный минимум для учащихся
+    1-5 годов обучения. Словарь компактен, прост в обращении, дополнен грамматическим справочником, иллюстрирующим
+    наиболее важные грамматические явления английского языка.<br>
+    Книга станет незаменимым помощником для школьников, а также для людей, изучающих английский язык самостоятельно.<br>
+    Составитель: Елена Владимировна Дзюина.<br>
+    6-е издание, переработанное.
+</div>
+
+<!--Модальное окно для кнопки "Купить"-->
+<div class="overlay" data-close=""></div>
+<div id="modal_buy" class="dlg-modal">
+    <form name = "contact_form" onsubmit="return validate_form ( );">
+        <div class="container">
+            <h1>Купить сейчас</h1>
+            <p>Заполните данные и через несколько минут вам перезвонит наш менеджер для подтверждения заказа.</p>
+            <hr>
+            <label><b>ФИО</b></label>
+            <input type="text"
+                   placeholder="Иванов Иван Иванович"
+                   pattern="[А-яа-я]+[ ][А-яа-я]+[ ][А-яа-я]+"
+                   title="Введите кириллицой имя фамилию отчество разделяя слова пробелами."
+                   required="">
+            <br>
+            <label style="text-align: center;"><b>Мобильный телефон</b></label>
+            <input type="tel"
+                   placeholder="+79104479731"
+                   pattern="[\+]?[0-9]{11}"
+                   required="">
+            <div class="clearfix">
+                <button type="reset"
+                        class="btn btn-dark"
+                        title = "Нажмите, чтобы очистить все поля"
+                        style="color:#feb386;">Cброс</button>
+                <button type = "submit" class="btn btn-dark"
+                        title = "Нажмите, чтобы подтвердить свои данные"
+                        style="color:#feb386;">Купить</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+
+<!--JavaScript-->
+
+<script>var typeAnimate = 'fade';</script>
+<script src="../js/popup-window-css3.function.js"></script>
 </body>
 </html>
