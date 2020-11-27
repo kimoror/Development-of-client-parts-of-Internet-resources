@@ -21,13 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="c75f334b-2e30-46f7-9a12-ead7b575946e" name="Default Changelist" comment="Add atribute alt to img. Add book IgraNaNervah. Change example phone number to unreal&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/Head.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/Head.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/MainPage/Section.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/Section.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doc/Classic.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/Classic.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/AboutUs.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doc/MainPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/MainPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/School.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/School.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/Stationery.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/Stationery.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Books/Stationery/PenMCGold.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/Books/Stationery/PenMCGold.jpg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,7 +120,8 @@
       <workItem from="1606238434246" duration="626000" />
       <workItem from="1606318919284" duration="10167000" />
       <workItem from="1606474733886" duration="155000" />
-      <workItem from="1606474930862" duration="9897000" />
+      <workItem from="1606474930862" duration="10140000" />
+      <workItem from="1606504906914" duration="448000" />
     </task>
     <task id="LOCAL-00001" summary="Add third window. Now, when I clicl on button three popup window opened">
       <created>1605852929213</created>
@@ -273,7 +270,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606475121205</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Add &quot;About Us&quot; and black-block at the bottom">
+      <created>1606504028870</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1606504028871</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -312,7 +316,8 @@
     <MESSAGE value="School page is ready!!" />
     <MESSAGE value="Change buy window" />
     <MESSAGE value="Delete AllItes.html everywhere" />
-    <option name="LAST_COMMIT_MESSAGE" value="Delete AllItes.html everywhere" />
+    <MESSAGE value="Add &quot;About Us&quot; and black-block at the bottom" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add &quot;About Us&quot; and black-block at the bottom" />
   </component>
   <component name="WindowStateProjectService">
     <state x="0" y="195" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604941304951">
@@ -411,11 +416,11 @@
     </state>
     <state width="499" height="398" key="SwitcherDM/0.0.1536.834/0.1080.1097.617@0.0.1536.834" timestamp="1606070810633" />
     <state width="623" height="498" key="SwitcherDM/0.20.1920.1060@0.20.1920.1060" timestamp="1604611214119" />
-    <state x="365" y="157" key="Vcs.Push.Dialog.v2" timestamp="1606337575106">
+    <state x="365" y="157" key="Vcs.Push.Dialog.v2" timestamp="1606504033671">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="365" y="157" key="Vcs.Push.Dialog.v2/0.0.1536.834/0.1080.1097.617@0.0.1536.834" timestamp="1606076896323" />
-    <state x="365" y="157" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1606337575106" />
+    <state x="365" y="157" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1606504033671" />
     <state x="456" y="220" key="Vcs.Push.Dialog.v2/0.20.1920.1060@0.20.1920.1060" timestamp="1605857803243" />
     <state x="429" y="179" key="run.anything.popup" timestamp="1606199587386">
       <screen x="0" y="0" width="1536" height="834" />
