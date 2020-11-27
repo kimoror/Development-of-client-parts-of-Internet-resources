@@ -21,8 +21,13 @@
   <component name="ChangeListManager">
     <list default="true" id="c75f334b-2e30-46f7-9a12-ead7b575946e" name="Default Changelist" comment="Add atribute alt to img. Add book IgraNaNervah. Change example phone number to unreal&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/All_Items.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/Head.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/Head.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/MainPage/Section.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/Section.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doc/Classic.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/Classic.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/Contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/AboutUs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/MainPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/MainPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/School.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/School.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/Stationery.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/Stationery.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +39,7 @@
       <list>
         <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -58,12 +64,14 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Danila\YandexDisk\Institute\3-rd_semestr\Development-of-client-parts-of-Internet-resources\kursach\css" />
       <recent name="C:\Users\Danila\YandexDisk\Institute\3-rd_semestr\Development-of-client-parts-of-Internet-resources\kursach\img\Books\Stationery" />
       <recent name="C:\Users\Asus\YandexDisk\Institute\3-rd_semestr\Development-of-client-parts-of-Internet-resources\kursach\img\Books\MainPage" />
       <recent name="$PROJECT_DIR$/Help" />
@@ -116,7 +124,7 @@
       <workItem from="1606238434246" duration="626000" />
       <workItem from="1606318919284" duration="10167000" />
       <workItem from="1606474733886" duration="155000" />
-      <workItem from="1606474930862" duration="109000" />
+      <workItem from="1606474930862" duration="9897000" />
     </task>
     <task id="LOCAL-00001" summary="Add third window. Now, when I clicl on button three popup window opened">
       <created>1605852929213</created>
@@ -258,7 +266,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606337572063</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Delete AllItes.html everywhere">
+      <created>1606475121205</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1606475121205</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -296,7 +311,8 @@
     <MESSAGE value="Staionery.html isready. And bug fixes" />
     <MESSAGE value="School page is ready!!" />
     <MESSAGE value="Change buy window" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change buy window" />
+    <MESSAGE value="Delete AllItes.html everywhere" />
+    <option name="LAST_COMMIT_MESSAGE" value="Delete AllItes.html everywhere" />
   </component>
   <component name="WindowStateProjectService">
     <state x="0" y="195" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604941304951">

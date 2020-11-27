@@ -47,6 +47,12 @@ margin-top: 30px;
     background: linear-gradient(to left top, #fff, rgba(255, 255, 255, 0));
 }
 
+.endblock{
+    width: 100%;
+    background: black;
+    padding-top: 5%;
+}
+
 
 @media only screen and (max-width: 550px) {
 

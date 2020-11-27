@@ -1,0 +1,34 @@
+.sticker {
+    background-color: #1d2124;
+    color: white;
+    border-radius: 20px;
+    margin: 2% 25%;
+    padding-bottom: 15px;
+}
+
+.sticker-title{
+    line-height: 105%;
+    padding-top: 2%;
+    text-align: center;
+}
+
+.sticker-main-text{
+    font-size: 110%;
+    padding: 0 4%;
+    padding-bottom: 2%;
+}
+
+@media screen and (max-width: 650px) {
+    .sticker{
+        margin: 0 10%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .sticker{
+        margin: 0 15%;
+    }
+}
+
+
+
