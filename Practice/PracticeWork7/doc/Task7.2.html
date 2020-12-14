@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id = "timer">0</p>
+<button onclick="fStart()">Начать отсчёт</button>
+<button onclick="fStop()">Стоп</button>
+<script>
+    let timerId;
+    function fStart(){
+        timerId = setInterval(() => {
+            let elem = document.getElementById("timer");
+            elem.innerHTML = Number(elem.innerHTML) + 1;
+        }, 1000);
+    }
+    function fStop(){
+        clearInterval(timerId)
+    }
+</script>
+</body>
+</html>

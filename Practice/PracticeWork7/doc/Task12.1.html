@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .tree span:hover{
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<ul class="tree" id = "tree">
+    <li>
+        Президент
+        <ul>
+            <li>Главный бухгалтер
+                <ul>
+                    <li>Кассир</li>
+                </ul>
+            </li>
+            <li>Вице-президент по производству
+                <ul>
+                    <li>
+                        Бригадир
+                        <ul>
+                            <li>
+                                Рабочие
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Бригадир
+                        <ul>
+                            <li>
+                                Рабочие
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>Вице-президент по продажам
+                <ul>
+                    <li>
+                        Торговые агенты
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+<script>
+for(let li of tree.querySelectorAll('li')){
+    let span = document.createElement('span');
+    li.prepend(span);
+    span.append(span.nextSibling);
+}
+
+tree.addEventListener('click', function (event){
+    if(event.target.tagName != 'SPAN')
+        return;
+    let ulClick = event.target.parentNode.querySelector('ul')
+    if(!ulClick)
+        return;
+    ulClick.hidden = !ulClick.hidden;
+})
+</script>
+</body>
+</html>

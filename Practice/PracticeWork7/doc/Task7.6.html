@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id = "clock"></div>
+<script>
+
+    let second;
+    let minute;
+    let hours
+    function currentTime() {
+        let date = new Date();
+        second = date.getSeconds();
+        minute = date.getMinutes();
+        hours = date.getHours();
+    }
+    function doubleTime(k){
+        if(k < 10)
+            return "0" + k;
+        else
+            return k;
+    }
+    function currentDoubleTime(){
+        currentTime();
+        second = doubleTime(second);
+        minute = doubleTime(minute);
+        hours = doubleTime(hours);
+        document.getElementById("clock").innerHTML = (24 - hours) + ':' + (60 - minute) + ':' + (60 - second);
+    }
+    setInterval(currentDoubleTime, 1000);
+</script>
+</body>
+</html>

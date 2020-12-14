@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id = "text" value="Hello">
+<button id = "button1" onclick="button1Func()">Скрыть</button>
+<button id = "button2" onclick="button2Func()">Показать</button>
+<script>
+    function button1Func(){
+        document.getElementById("text").style.visibility = "hidden";
+    }
+    function button2Func(){
+        document.getElementById("text").style.visibility = "visible";
+    }
+</script>
+</body>
+</html>

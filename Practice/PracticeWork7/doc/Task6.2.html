@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<body>
+<p>Абзац с текстом</p>
+<p>Абзац с текстом</p>
+<p>Абзац с текстом</p>
+<p>Абзац с текстом</p>
+<p>Абзац с текстом</p>
+<p>Абзац с текстом</p>
+<p>Абзац с текстом</p>
+<p>Абзац с текстом</p>
+<button onclick="f()">Change text</button>
+<script>
+    function f(){
+        let paragraphs = document.getElementsByTagName('p');
+        for(let i = 0; i < paragraphs.length; i++){
+            paragraphs[i].innerHTML = `${i}. Абзац с текстом`;
+        }
+    }
+</script>
+</body>
+</html>

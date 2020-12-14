@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id = "text" value="Hello">
+<button id = "button" onclick="buttonFunc()">Нажми на меня</button>
+<script>
+    function buttonFunc(){
+        let text = document.getElementById("text");
+        text.value = "Goodbye";
+        text.style.color = "blue";
+        text.style.width = "300px";
+        text.style.borderRadius = "25px";
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .parahraph{
+            background: antiquewhite;
+            border-top: 1px solid cornflowerblue;
+            position: relative;
+            width: 480px;
+            height: 320px;
+            overflow: auto;
+            font-family: Elephant;
+        }
+        .close-button{
+            position: absolute;
+            top: 10px;
+            color: darkslateblue;
+            right: 7px;
+            border: salmon 2px solid;
+            background: transparent;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <p class="parahraph"> это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной
+        "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию
+        размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил
+        без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время
+        послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы
+        электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.</p>
+    <p class="parahraph"> это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной
+        "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию
+        размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил
+        без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время
+        послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы
+        электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.</p>
+    <p class="parahraph"> это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной
+        "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию
+        размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил
+        без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время
+        послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы
+        электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.</p>
+<script>
+    let arr = document.querySelectorAll('.parahraph')
+    for(let elem of arr){
+        elem.insertAdjacentHTML('afterbegin', '<button class="close-button">Close</button>')
+        elem.firstChild.onclick = () => elem.remove();
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Галерея</title>
+    <link rel="stylesheet" href="Task15.1.css">
+    <meta charset="utf-8">
+</head>
+
+<body>
+
+<p><img id="largeImg" src="https://telegraf.com.ua/files/2019/12/fullsize35.jpg" alt="Large image"></p>
+
+<ul id="thumbs">
+    <li>
+        <a href="https://ochepyatki.ru/upfiles/albums/3634/f_95158.jpg" title="Image 2">
+            <img src="https://ochepyatki.ru/upfiles/albums/3634/f_95158.jpg" height="100" width="100"></a>
+    </li>
+    <li>
+        <a href="https://ochepyatki.ru/upfiles/albums/2346/f_58338.jpg" title="Image 3">
+            <img src="https://ochepyatki.ru/upfiles/albums/2346/f_58338.jpg" height="100" width="100"></a>
+    </li>
+    <li>
+        <a href="https://twizz.ru/wp-content/uploads/2017/05/Screenshot_3-8.jpg" title="Image 4">
+            <img src="https://twizz.ru/wp-content/uploads/2017/05/Screenshot_3-8.jpg" height="100" width="100"></a>
+    </li>
+    <li>
+        <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVT4s9-iIvz1CrumwbV6bL6unYu-E4vIfYKg&usqp=CAU"
+           title="Image 5">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVT4s9-iIvz1CrumwbV6bL6unYu-E4vIfYKg&usqp=CAU"
+                 height="100" width="100"></a>
+    </li>
+    <li>
+        <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx3rb0rCwHMGnRW1jFBE7tJB4won5EJl2A2g&usqp=CAU"
+           title="Image 6">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx3rb0rCwHMGnRW1jFBE7tJB4won5EJl2A2g&usqp=CAU"
+                 height="100" width="100"></a>
+    </li>
+</ul>
+
+<script>
+    thumbs.onclick = function(event) {
+        let thumbnail = event.target.closest('a');
+
+        if (!thumbnail) return;
+        showThumbnail(thumbnail.href, thumbnail.title);
+        event.preventDefault();
+    }
+
+    function showThumbnail(href, title) {
+        largeImg.src = href;
+        largeImg.alt = title;
+    }
+</script>
+</body>
+</html>

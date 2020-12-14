@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <style>
+        #contents {
+            padding: 5px;
+            border: 1px green solid;
+        }
+    </style>
+</head>
+
+<body>
+
+<fieldset id="contents">
+    <legend>#contents</legend>
+    <p>
+        Ссылка на всю энциклопедию мира <a href="https://www.google.com/">Google</a> или посетить
+        <a href="https://www.mirea.ru/"><i>Мирэа</i></a> и узнать о современных стандартах?    </p>
+</fieldset>
+<script>
+    contents.onclick = function (event){
+        function goToLink(){
+            let flag = confirm('Вы точно хотите перейти по ссылке?');
+            if (!flag)
+                event.preventDefault();
+        }
+        let target = event.target.closest('a');
+        if(target && contents.contains(target)){
+            return goToLink();
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a id = "link1" href="https://yandex.ru/">Ссылка1</a>
+<br>
+<a id = "link2" href="https://news.tut.by/">Ссылка2</a>
+<br>
+<a id = "link3" href="https://www.google.com/">Ссылка3</a>
+<br>
+<button onclick="func()">Press me</button>
+<script>
+    function func(){
+        document.getElementById("link1").innerHTML+="(yandex.ru)";
+        document.getElementById("link2").innerHTML+="(tut.by)";
+        document.getElementById("link3").innerHTML+="(google.com)";
+    }
+</script>
+</body>
+</html>

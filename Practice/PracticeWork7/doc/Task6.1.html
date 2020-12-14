@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p>old text</p>
+    <p>old text</p>
+    <p>old text</p>
+    <button onclick="f()">Change text</button>
+<script>
+    function f(){
+        let paragraphs = document.getElementsByTagName('p');
+        paragraphs[0].innerHTML = "new text";
+        paragraphs[1].innerHTML = "new text";
+    }
+</script>
+</body>
+</html>
