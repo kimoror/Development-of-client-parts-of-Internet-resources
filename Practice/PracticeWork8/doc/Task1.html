@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #car{
+            position: relative;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<img id = "car" src = "https://obgonay.ru/wp-content/uploads/detskie-risunki-mashina_41.jpg"
+     width=200px height=113px>
+<script>
+    car.onclick = function() {
+        let start = Date.now();
+
+        let timer = setInterval(function() {
+            let timePassed = Date.now() - start;
+
+            car.style.left = timePassed / 5 + 'px';
+
+            if (timePassed > 2000) clearInterval(timer);
+
+        }, 20);
+    }
+</script>
+</body>
+</html>
